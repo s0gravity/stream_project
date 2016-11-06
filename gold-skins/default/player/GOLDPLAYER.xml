@@ -1,0 +1,69 @@
+<skin>
+  <element id="playButtonOverlayNormal" src="gold-skins/default/player/images/GoldMOVIES_PLAY.png"/>
+  <element id="playButtonOverlayDown" src="gold-skins/default/player/images/GoldMOVIES_PLAY.png"/>
+  <element id="playButtonOverlayOver" src="gold-skins/default/player/images/GoldMOVIES_PLAY.png"/>
+
+  <element id="controlBarBackdrop" src="gold-skins/default/player/images/controlBarBackdrop.png"/>
+  <element id="controlBarBackdropLeft" src="gold-skins/default/player/images/controlBarBackdrop.png"/>
+  <element id="controlBarBackdropRight" src="gold-skins/default/player/images/controlBarBackdrop.png"/>
+
+  <element id="playButtonNormal" src="gold-skins/default/player/images/playButton.png"/>
+  <element id="playButtonDown" src="gold-skins/default/player/images/playButton.png"/>
+  <element id="playButtonOver" src="gold-skins/default/player/images/playButton.png"/>
+
+  <element id="pauseButtonNormal" src="gold-skins/default/player/images/pauseButton.png"/>
+  <element id="pauseButtonDown" src="gold-skins/default/player/images/pauseButton.png"/>
+  <element id="pauseButtonOver" src="gold-skins/default/player/images/pauseButton.png"/>
+
+  <element id="scrubBarTrack" src="gold-skins/default/player/images/scrubBarTrack.png"/>
+  <element id="scrubBarTrackLeft" src="gold-skins/default/player/images/scrubBarPlayedTrack.png"/>
+  <element id="scrubBarTrackRight" src="gold-skins/default/player/images/scrubBarLoadedTrack.png"/>
+  <element id="scrubBarLoadedTrack" src="gold-skins/default/player/images/scrubBarLoadedTrack.png"/>
+  <element id="scrubBarLoadedTrackEnd" src="gold-skins/default/player/images/scrubBarLoadedTrack.png"/>
+  <element id="scrubBarPlayedTrack" src="gold-skins/default/player/images/scrubBarPlayedTrack.png"/>
+
+  <element id="scrubBarScrubberNormal" src="gold-skins/default/player/images/scrubBarScrubber.png"/>
+  <element id="scrubBarScrubberDown" src="gold-skins/default/player/images/scrubBarScrubber.png"/>
+  <element id="scrubBarScrubberOver" src="gold-skins/default/player/images/scrubBarScrubber.png"/>
+  <element id="scrubBarScrubberDisabled" src="gold-skins/default/player/images/scrubBarScrubber.png"/>
+
+  <element id="fullScreenEnterButtonNormal" src="gold-skins/default/player/images/fullScreenEnterButton.png"/>
+  <element id="fullScreenEnterButtonDown" src="gold-skins/default/player/images/fullScreenEnterButton.png"/>
+  <element id="fullScreenEnterButtonOver" src="gold-skins/default/player/images/fullScreenEnterButton.png"/>
+  <element id="fullScreenLeaveButtonNormal" src="gold-skins/default/player/images/fullScreenLeaveButton.png"/>
+  <element id="fullScreenLeaveButtonDown" src="gold-skins/default/player/images/fullScreenLeaveButton.png"/>
+  <element id="fullScreenLeaveButtonOver" src="gold-skins/default/player/images/fullScreenLeaveButton.png"/>
+
+  <element id="volumeButtonNormal" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonDown" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonOver" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonLowNormal" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonLowDown" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonLowOver" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonMedNormal" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonMedDown" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonMedOver" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonHighNormal" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonHighDown" src="gold-skins/default/player/images/volumeButton.png"/>
+  <element id="volumeButtonHighOver" src="gold-skins/default/player/images/volumeButton.png"/>
+
+  <element id="volumeBarBackdrop" src="gold-skins/default/player/images/volumeBarBackdrop.png"/>
+  <element id="volumeBarTrack" src="gold-skins/default/player/images/volumeBarTrack.png"/>
+  <element id="volumeBarTrackEnd" src="gold-skins/default/player/images/volumeBarTrack.png"/>
+  <element id="volumeBarSliderNormal" src="gold-skins/default/player/images/volumeBarSlider.png"/>
+  <element id="volumeBarSliderDown" src="gold-skins/default/player/images/volumeBarSlider.png"/>
+  <element id="volumeBarSliderOver" src="gold-skins/default/player/images/volumeBarSlider.png"/>
+
+  <element id="unmuteButtonNormal" src="gold-skins/default/player/images/unmuteButton.png"/>
+  <element id="unmuteButtonDown" src="gold-skins/default/player/images/unmuteButton.png"/>
+  <element id="unmuteButtonOver" src="gold-skins/default/player/images/unmuteButton.png"/>
+
+  <element id="hdOff" src="gold-skins/default/player/images/hdOff.png"/>
+  <element id="hdOver" src="gold-skins/default/player/images/hdOff.png"/>
+
+  <element id="ccNormal" src="gold-skins/default/player/images/cc.png"/>
+  <element id="ccOver" src="gold-skins/default/player/images/cc.png"/>
+
+  <element id="bufferingOverlay" src="gold-skins/default/player/images/bufferingOverlay.swf"/>
+  
+</skin>

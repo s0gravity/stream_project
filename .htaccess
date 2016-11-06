@@ -1,0 +1,42 @@
+#
+# Setting Gold MEDIA requirements
+#
+# On some server configurations you may need to comment out one or more of
+# the three lines below due to server limitations.
+#
+
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+Options +Indexes +FollowSymLinks
+php_value short_open_tag On
+#
+# Setting rewrite rules
+#
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^movies/([^/.]+)$ index.php?gold=movies&sub_gold=$1 [L,QSA]
+  RewriteRule ^genre/([^/.]+)$ index.php?gold=genre&sub_gold=$1 [L,QSA]
+  RewriteRule ^year/([^/.]+)$ index.php?gold=year&sub_gold=$1 [L,QSA]
+  RewriteRule ^producer/([^/.]+)$ index.php?gold=producer&sub_gold=$1 [L,QSA]
+  RewriteRule ^actor/([^/.]+)$ index.php?gold=actor&sub_gold=$1 [L,QSA]
+  RewriteRule ^pages/([^/.]+)$ index.php?gold=pages&sub_gold=$1 [L,QSA]
+  RewriteRule ^user/([^/.]+)$ index.php?gold=user&sub_gold=$1 [L,QSA]
+  RewriteRule ^([^/.]+)/([^/.]+)$ index.php?gold=post&sub_gold=$1&sub2_gold=$2 [L,QSA]
+  RewriteEngine On
+  #RewriteBase /
+  RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+  RewriteRule . %1/%2 [R=301,L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # Main URL rewriting
+  RewriteRule ^([^/.]+)$ index.php?gold=$1 [L,QSA]
+  RewriteRule ^rss.xml$ index.php?xml=rss [L,QSA]
+  RewriteRule ^sitemap.xml$ index.php?xml=sitemap [L,QSA]
+  RewriteRule ^([^/.]+)$ index.php?gold=$1 [L,QSA]
+  RewriteRule ^([^/.]+)/$ index.php?gold=$1 [L,QSA]
+  RewriteRule ^([^/.]+)/([^/.]+)/$ index.php?gold=$1&sub_gold=$2 [L,QSA]
+  RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)$ index.php?gold=$1&sub_gold=$2&sub2_gold=$3 [L,QSA]
+  RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)/([^/.]+)$ index.php?gold=$1&sub_gold=$2&sub2_gold=$3&sub3_gold=$4 [L]
+  RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)/([^/.]+)/([^/.]+)$ index.php?gold=$1&sub_gold=$2&sub2_gold=$3&sub3_gold=$4&sub4_gold=$5 [L]
+</IfModule>
