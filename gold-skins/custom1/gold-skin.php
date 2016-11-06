@@ -266,7 +266,12 @@ echo "
 		$query = mysql_query("SELECT * FROM gold_posts WHERE post_name='".$this->GOLD_REQUEST('sub2_gold')."' ORDER BY post_id LIMIT 1");
 		while($row = mysql_fetch_array($query)) {
 		// Movie Information
-		$image = ''.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$row['post_thumb'];
+        if($row['post_type'] == '0') {
+            $image = ''.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$row['post_thumb'];
+        }
+        elseif($row['post_type'] == '1'){
+            $image = $row['post_thumb'];
+        }
 		$category = mysql_fetch_array(mysql_query("SELECT * FROM gold_categories WHERE category_id='".$row['category_id']."'"));
 		$categories = $row['category_id'];
 		$cats = explode(",", $categories);
@@ -751,7 +756,7 @@ $post_type .= '
 			$post_type = ''.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$media['post_thumb'].'';
 		}
     	elseif($media['post_type'] == '1') {
-			$post_type = ''.$media['post_img'].'';
+			$post_type = ''.$media['post_thumb'].'';
      	}
 		$directed_by = $media['directed_by'];
 		$directed = explode(", ", $directed_by);
@@ -759,7 +764,7 @@ $post_type .= '
 			$rejisori = "<a href='".$this->GOLD_ROOT()."producer/".$rejisori."'>".str_replace(".", "", $rejisori)."</a>";
 		}
 		$rejisorebi = implode(", ", $directed);
-		
+
 		$casts_by = $media['casts'];
 		$casts_explode = explode(", ", $casts_by);
 		foreach($casts_explode as &$casts_to) {
@@ -1251,8 +1256,14 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 						while($popular_movies = mysql_fetch_array($POPULAR_MOVIES_QUERY)) {
 							$GOLD_CHECK_CATEGORY_second = mysql_query("SELECT * FROM `gold_categories` WHERE category_id = '".$popular_movies['category_id']."%'");
 							$GOLD_CATEGORY_second = mysql_fetch_array($GOLD_CHECK_CATEGORY_second);
-							$block['categories'] .= '<div class="pop_img"><a href="'.$this->GOLD_ROOT().$GOLD_CATEGORY_second['name'].'/'.$popular_movies['post_name'].'"><img src="'.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$popular_movies['post_thumb'].'" alt="'.$popular_movies['post_title'].'" title="'.$popular_movies['post_title'].'" style="width: 130px; height: 185px;"></div>';
-						}
+                            if($popular_movies['post_type'] == '0') {
+                                $block['categories'] .= '<div class="pop_img"><a href="' . $this->GOLD_ROOT() . $GOLD_CATEGORY_second['name'] . '/' . $popular_movies['post_name'] . '"><img src="' . $this->GOLD_ROOT() . 'gold-app/gold-uploads/media/' . $popular_movies['post_thumb'] . '" alt="' . $popular_movies['post_title'] . '" title="' . $popular_movies['post_title'] . '" style="width: 130px; height: 185px;"></div>';
+                            }
+                            elseif($popular_movies['post_type'] == '1') {
+                                $block['categories'] .= '<div class="pop_img"><a href="' . $this->GOLD_ROOT() . $GOLD_CATEGORY_second['name'] . '/' . $popular_movies['post_name'] . '"><img src="' . $popular_movies['post_thumb'] . '" alt="' . $popular_movies['post_title'] . '" title="' . $popular_movies['post_title'] . '" style="width: 130px; height: 185px;"></div>';
+                            }
+
+                        }
 			$block['categories'] .= '
 					</div>
 				</span>
