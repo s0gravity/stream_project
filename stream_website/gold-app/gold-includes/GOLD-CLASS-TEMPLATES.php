@@ -429,7 +429,7 @@ class SkinFunctions {
 		
         $statement = "gold_posts WHERE post_status='1'";
 		
-	    $q = mysql_query("SELECT * FROM $statement ORDER BY post_id DESC LIMIT $startpoint,$limit");
+	    $q = mysql_query("SELECT * FROM $statement ORDER BY post_id ASC LIMIT $startpoint,$limit");
 		
 		$this->GOLD_box($q, $content, "index", $statement);
   }
@@ -449,7 +449,7 @@ class SkinFunctions {
 			$q = mysql_query("SELECT p.*, c1.category_id, c1.name, c2.category_id, c2.name FROM gold_categories c1 LEFT JOIN gold_categories c2 ON c2.parent_id = c1.category_id INNER JOIN gold_posts p ON p.post_status='1' WHERE c1.parent_id = 0 AND p.category_id=c2.category_id OR p.category_id=c2.parent_id AND c2.parent_id LIKE '".$cat['category_id']."' AND p.category_id LIKE '".$cat['category_id']."' ORDER BY p.post_id DESC LIMIT ".$limit."");
 		} else {
 			$statement = "gold_posts WHERE FIND_IN_SET('".$cat['category_id']."', category_id) > 0 AND post_status='1'";
-			$q = mysql_query("SELECT * FROM $statement ORDER BY post_id DESC LIMIT $startpoint, $limit");
+			$q = mysql_query("SELECT * FROM $statement ORDER BY post_id ASC LIMIT $startpoint, $limit");
 		}
 		$this->GOLD_box($q, $content, "cat", $statement);
 	}
@@ -480,7 +480,7 @@ class SkinFunctions {
 		$startpoint = ($page * $limit) - $limit;
 		
 		$statement = "gold_posts WHERE year='".$name."' AND post_status='1'";
-		$q = mysql_query("SELECT * FROM $statement ORDER BY post_id DESC LIMIT $startpoint, $limit");
+		$q = mysql_query("SELECT * FROM $statement ORDER BY post_id ASC LIMIT $startpoint, $limit");
 		
 		$this->GOLD_box($q, $content, "year", $statement);
   }
