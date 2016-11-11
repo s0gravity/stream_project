@@ -1,0 +1,3 @@
+"delete from gold_links;
+delete from gold_episodes;
+delete from gold_posts;"

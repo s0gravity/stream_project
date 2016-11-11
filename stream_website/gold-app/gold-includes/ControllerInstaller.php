@@ -172,7 +172,7 @@ class Installer {
 		if($type == 'table') {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_categories` (
-				  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+				  `category_id` int(11) NOT NULL,
 				  `parent_id` varchar(100) NOT NULL,
 				  `title` varchar(100) NOT NULL,
 				  `name` varchar(100) NOT NULL,
@@ -428,7 +428,7 @@ class Installer {
 		if($type == 'table') {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_episodes` (
-				  `id` int(11) NOT NULL AUTO_INCREMENT,
+				  `id` int(11) NOT NULL,
 				  `movie_id` mediumtext NOT NULL,
 				  `post_id` int(10) unsigned NOT NULL,
 				  `season_id` int(10) unsigned,
@@ -449,7 +449,7 @@ class Installer {
         if($type == 'table') {
             return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_links` (
-				  `id` int(11) NOT NULL AUTO_INCREMENT,
+				  `id` int(11) NOT NULL,
 				  `post_id` int(10) unsigned NOT NULL,
 				  `season_id` int(10) unsigned,
 				  `episode_id` int(10) unsigned,
@@ -471,7 +471,7 @@ class Installer {
 		if($type == 'table') {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_posts` (
-				  `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `post_id` int(10) unsigned NOT NULL,
 				  `post_type` int(1) NOT NULL DEFAULT '0',
 				  `category_id` varchar(1000) NOT NULL,
 				  `language` varchar(1000) NOT NULL DEFAULT 'English',
@@ -489,8 +489,8 @@ class Installer {
 				  `post_name` varchar(1000) NOT NULL,
 				  `post_content` text NOT NULL,
 				  `post_thumb` varchar(1000) NOT NULL,
-				  `movie_flv` varchar(1000) NOT NULL,
-				  `movie_iframe` varchar(1000) NOT NULL,
+				  `movie_flv` varchar(1000),
+				  `movie_iframe` varchar(1000),
 				  `post_tags` varchar(1000) NOT NULL,
 				  `post_status` int(10) unsigned NOT NULL DEFAULT '1',
 				  `post_msa` varchar(1000) NOT NULL,
