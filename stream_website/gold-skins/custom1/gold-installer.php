@@ -1,7 +1,7 @@
 <?php
 
 class GOLD_MEDIA_Installer {
-	var $templateName='default';
+	var $templateName='custom1';
 	public function getCurrentTemplatePath()
 	{
 		return 'gold-skins/'.$this->templateName.'';
@@ -16,7 +16,7 @@ class GOLD_MEDIA_Installer {
   <head>
   	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-  	<title>Gold MOVIES Installer</title>
+  	<title>STREAM PARADISE Installer</title>
   	<link rel="stylesheet" href="'.$this->getCurrentTemplatePath().'/installer.css" />
   	<script src="//use.edgefonts.net/source-sans-pro:n3,n4,n6,i3,i4;source-code-pro:n4.js"></script>
   </head>
@@ -31,7 +31,7 @@ class GOLD_MEDIA_Installer {
 	<div id="hero-wrapper">
 	    <div id="hero" class="row">
 	        <div class="large-12 columns">
-	        	<h1 class="animated bounce"><span>Gold MOVIES Installation</span></h1>
+	        	<h1 class="animated bounce"><span>STREAM PARADISE Installation</span></h1>
 	        	<h2 class="error"><span>'.$this->form_error().'</span></h2>
 	        	<form method="POST" action="" class="forms">
 	        		<h2><span>Database Information:</span></h2>
@@ -68,13 +68,13 @@ class GOLD_MEDIA_Installer {
 					<div class="input-groups width-50">
 						<div class="checkbox">
 							<label>
-						    	<input type="checkbox" name="import_posts" checked="checked" value="1" style="float: left;"> <span style="float: left; margin-top: -3px; margin-left: 5px;">Pre-Import Media</span>
+						    	<input type="checkbox" name="import_posts" value="1" style="float: left;"> <span style="float: left; margin-top: -3px; margin-left: 5px;">Pre-Import Media</span>
 							</label>
 						</div>
 					</div>
 					<div class="input-groups width-50">
-						<div style="width: 210px; margin:0 auto;">
-							'.$Installer->form_input('input', 'Submit', 'submit', 'submit', 'Install Gold MOVIES !', 'gold_submit').'
+						<div style="width: 280px; margin:0 auto;">
+							'.$Installer->form_input('input', 'Submit', 'submit', 'submit', 'Install STREAM PARADISE !', 'gold_submit').'
 						</div>
 					</div>
 				</form>

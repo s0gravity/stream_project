@@ -815,12 +815,7 @@ $post_type .= '
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('language_title').':</div><div class="movie_desc_content"><a>'.$media['language'].'</a></div></div>
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('producer_title').':</div><div class="movie_desc_content">'.$rejisorebi.'</div></div>
 							<div class="movie_desc_row" style="line-height: 15px; padding-top: 3px; padding-bottom: 8px; border-bottom: 1px solid rgb(202, 202, 202); border-bottom-style: dotted;"><div class="movie_desc_title">'.$this->LANG('actors_title').':</div> <font style="float: none; font-family: Arial; font-size: 10px; font-weight: bold; color: #000; position: relative; top: -1px;">'.$casts.'</font></div>
-							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 70px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
-							<div style="display: inline-block; position: relative; bottom: -10px; width: 350px;">
-								<div style="display: inline-block;position: absolute;bottom: 0;width: 100%;">
-									<div class="imdb-badge arrow" style="display: inline-block;"><span>'.$media['imdb'].'</span></div>
-								</div>
-							</div>
+							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 150px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
 						</div>
 					</div>
 				</div>
@@ -987,7 +982,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY post_views DESC LIMIT ".$limit."");
 	}
 	echo $this->GOLD_box($q, $content);
-	
+
 	$GOLD_html .= $this->output('</div>'); 
     return $GOLD_html;
   }
@@ -1023,7 +1018,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	}
 
 	echo $this->GOLD_box($q, $content);
-	
+
 	$GOLD_html .= $this->output('</div>'); 
     return $GOLD_html;
   }
@@ -1749,11 +1744,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('language_title').':</div><div class="movie_desc_content"><a>'.$media['language'].'</a></div></div>
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('producer_title').':</div><div class="movie_desc_content">'.$rejisorebi.'</div></div>
 							<div class="movie_desc_row" style="line-height: 15px; padding-top: 3px; padding-bottom: 8px; border-bottom: 1px solid rgb(202, 202, 202); border-bottom-style: dotted;"><div class="movie_desc_title">'.$this->LANG('actors_title').':</div> <font style="float: none; font-family: Arial; font-size: 10px; font-weight: bold; color: #000; position: relative; top: -1px;">'.$casts.'</font></div>
-							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 70px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
-							<div style="position: absolute; bottom: 5px; display: inline-block; width: 350px;">
-								<div class="imdb-badge arrow" style="float: left;"><span>'.$media['imdb'].'</span></div>
-								<a href="'.$this->GOLD_ROOT().$GOLD_CATEGORY['name'].'/'.$media['post_name'].'" id="srulad_naxva" href="" style="float: right;">'.$this->LANG('show_details').'</a>
-							</div>
+							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 150px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
 						</div>
 					</div>
 				</div>
