@@ -48,6 +48,21 @@ print "Number of pages = ",nb_pages
 #nb_pages = 1
 #préparation du fichier CSV
 print "Préparation du fichier CSV ................."
+#CSV FOR CATEGORIES
+f = open("dps_animes_db_categories_"+str(date_day)+".csv", "wb")
+csv_file_categories = csv.writer(f,delimiter=';')
+csv_file_categories.writerow(["ID","NAME","TYPE"])
+full_tags = soup.findAll("select", {"id" : "AnimeCategorieSecondary"})
+categ_row_id = 0
+categs_tab = []
+for option in full_tags[0].findAll("option"):
+    if categ_row_id >= 1:
+        categ_txt = option.getText().strip()
+        categ_id = str(option['value']).strip()
+        categs_tab.append({'id':categ_id,'name':categ_txt})
+        csv_file_categories.writerow([categ_id,str(categ_txt),"anime"])
+    categ_row_id+=1
+f.close()
 #CSV FOR SERIES
 csv_file = csv.writer(open("dps_animes_db_"+str(date_day)+".csv", "wb"),delimiter=';')
 csv_file.writerow(["ROW_ID","TITLE","ALT TITLE","RLS DATE","DURATION (MIN)","CATEGORIES","NB_EPISODES","DESCRIPTION","IMAGE","KEYWORDS"])
@@ -117,8 +132,11 @@ for i in range(nb_pages):
         row['categories'] = ""
         for tag in tags:
             categories = tag.findAll("span", {"itemprop" : "name"})
-            row['categories'] += categories and categories[0].getText() or "ND"
-            row['categories']+=","
+            categ_txt2 = categories and categories[0].getText().strip() or "ND"
+            for c in categs_tab:
+                if c['name'] == categ_txt2:
+                    row['categories'] += str(c['id']).strip()
+                    row['categories']+=","
         if row['categories'] != "": row['categories'] = row['categories'][:-1]
         #numberOfEpisodes
         nb_episodes = soup.findAll("meta", {"itemprop" : "numberOfEpisodes"})
