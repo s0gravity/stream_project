@@ -88,10 +88,12 @@ for i in range(nb_pages):
         if tags:
             row['title'] = tags[0].getText()
             #print row['title']
+	    row['title'].replace(".","")
         #ALTERNATIVE TITLE
         tags = soup.findAll("span", {"itemprop" : "alternativeHeadline"})
         if tags:
             row['a_title'] = tags[0].getText()
+	    row['a_title'].replace(".","")
         else:
             row['a_title'] = "ND"
         #RELEASE DATE
@@ -135,10 +137,10 @@ for i in range(nb_pages):
             row['image'] = image[0]['src']
             if row['image'][:8] == '//static':row['image'] = "http:"+row['image']
         #CHECK IMAGE ERROR
-        # row['image_error'] = 0
-        # img_request = requests.get(row['image'])
-        # if img_request.status_code != 200:
-        #     row['image_error'] = 1
+        #row['image_error'] = 0
+        #img_request = requests.get(row['image'])
+        #if img_request.status_code != 200:
+        #    row['image_error'] = 1
         #KEYWORDS
         keywords = soup.findAll("meta", {"name" : "keywords"})
         row['keywords']= "ND"

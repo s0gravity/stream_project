@@ -91,11 +91,13 @@ for i in range(nb_pages):
         tags = soup.findAll("span", {"class" : "tv_title"})
         if tags:
             row['title'] = tags[0].getText()
+	    row['title'].replace(".","")		
             #print row['title']
         #ALTERNATIVE TITLE
         tags = soup.findAll("span", {"itemprop" : "alternativeHeadline"})
         if tags:
             row['a_title'] = tags[0].getText()
+            row['a_title'].replace(".","")
         else:
             row['a_title'] = "ND"
         #RELEASE DATE
@@ -120,8 +122,8 @@ for i in range(nb_pages):
         for tag in tags:
             directors = tag.findAll("span", {"itemprop" : "name"})
             row['directors'] += directors and directors[0].getText() or "ND"
-            row['directors']+=" ,"
-        if row['directors'] != "": row['directors'] = row['directors'][:-1]
+            row['directors']+=", "
+        if row['directors'] != "": row['directors'] = row['directors'][:-2]
         #actors
         tags = soup.findAll("span", {"itemprop" : "actor"})
         row['actors'] = ""
@@ -129,8 +131,8 @@ for i in range(nb_pages):
             actors = tag.findAll("span", {"itemprop" : "name"})
             if actors and actors[0].getText() not in row['actors']:
 	    	row['actors'] += actors and actors[0].getText() or "ND"
-            	row['actors']+=" ,"
-        if row['actors'] != "": row['actors'] = row['actors'][:-1]
+            	row['actors']+=", "
+        if row['actors'] != "": row['actors'] = row['actors'][:-2]
         #CATEGORIES
         tags = soup.findAll("span", {"itemprop" : "genre"})
         row['categories'] = ""
@@ -169,10 +171,10 @@ for i in range(nb_pages):
             row['image'] = image[0]['src']
             if row['image'][:8] == '//static':row['image'] = "http:"+row['image']
         #CHECK IMAGE ERROR
-        # row['image_error'] = 0
-        # img_request = requests.get(row['image'])
-        # if img_request.status_code != 200:
-        #     row['image_error'] = 1
+        #row['image_error'] = 0
+        #img_request = requests.get(row['image'])
+        #if img_request.status_code != 200:
+        #    row['image_error'] = 1
         #KEYWORDS
         keywords = soup.findAll("meta", {"name" : "keywords"})
         row['keywords']= "ND"
