@@ -95,7 +95,8 @@ class Installer {
 
 		// *** gold_categories *** //
 		$this->gold_categories('table');
-		$this->gold_categories('insert');
+        //$this->gold_categories('insert');
+		$this->gold_categories('insert2');
 
 		// *** gold_flags *** //
 		$this->gold_flags('table');
@@ -173,10 +174,11 @@ class Installer {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_categories` (
 				  `category_id` int(11) NOT NULL,
-				  `parent_id` varchar(100) NOT NULL,
+				  `parent_id` varchar(100),
 				  `title` varchar(100) NOT NULL,
 				  `name` varchar(100) NOT NULL,
 				  `status` int(1) NOT NULL DEFAULT '1',
+				  `type` varchar(10) NOT NULL,
 				  PRIMARY KEY (`category_id`)
 				) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 			");
@@ -208,6 +210,14 @@ class Installer {
 				(22, '', 'New Year''s Eve', 'new-years-eve', 1);
 			");
 		}
+        if($type == 'insert2') {
+            return mysql_query("
+				INSERT INTO `gold_categories` (`category_id`, `parent_id`, `title`, `name`, `status`) VALUES
+				(10001, '', 'Films', 'Films', 1),
+				(10002, '', 'Series', 'Series', 1),
+				(10003, '', 'Animes', 'Animes', 1),
+			");
+        }
 	}
 	static function gold_flags($type) {
 		if($type == 'table') {

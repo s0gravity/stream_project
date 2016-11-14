@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - stream_paradise@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="stream_paradise">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="GAMES_SANCTUARY"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="phpmyadmin"/>
+    <table id="7" parent="1" name="gold_blocks"/>
+    <table id="8" parent="1" name="gold_categories"/>
+    <table id="9" parent="1" name="gold_episodes"/>
+    <table id="10" parent="1" name="gold_flags"/>
+    <table id="11" parent="1" name="gold_groups"/>
+    <table id="12" parent="1" name="gold_pages"/>
+    <table id="13" parent="1" name="gold_plugins"/>
+    <table id="14" parent="1" name="gold_plugins_settings"/>
+    <table id="15" parent="1" name="gold_posts"/>
+    <table id="16" parent="1" name="gold_settings"/>
+    <table id="17" parent="1" name="gold_tags"/>
+    <table id="18" parent="1" name="gold_users"/>
+    <table id="19" parent="1" name="gold_widgets"/>
+    <column id="20" parent="7" name="block_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="21" parent="7" name="block_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="22" parent="7" name="block_title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="23" parent="7" name="block_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="24" parent="7" name="block_position">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="25" parent="7" name="block_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="26" parent="7" name="PRIMARY">
+      <columns>block_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="27" parent="8" name="category_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="28" parent="8" name="parent_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="29" parent="8" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="30" parent="8" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="31" parent="8" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="32" parent="8" name="PRIMARY">
+      <columns>category_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="33" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="34" parent="9" name="movie_id">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <column id="35" parent="9" name="episode_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10000)|0</data-type>
+    </column>
+    <column id="36" parent="9" name="movie_link">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <column id="37" parent="9" name="movie_iframe">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <key id="38" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="39" parent="10" name="flag_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="40" parent="10" name="flag_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="41" parent="10" name="post_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="42" parent="10" name="user_ip">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="43" parent="10" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="44" parent="10" name="flag_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="45" parent="10" name="PRIMARY">
+      <columns>flag_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="46" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="47" parent="11" name="group_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="48" parent="11" name="group_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="49" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="50" parent="12" name="page_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="51" parent="12" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="52" parent="12" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="53" parent="12" name="content">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="54" parent="12" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="55" parent="12" name="PRIMARY">
+      <columns>page_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="56" parent="13" name="plugin_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="57" parent="13" name="plugin_title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="58" parent="13" name="plugin_position">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="59" parent="13" name="plugin_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="60" parent="13" name="PRIMARY">
+      <columns>plugin_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="61" parent="14" name="set_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="62" parent="14" name="plugin_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="63" parent="14" name="plugin_title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="64" parent="14" name="set_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="65" parent="14" name="set_content">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="66" parent="14" name="set_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="67" parent="14" name="PRIMARY">
+      <columns>set_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="68" parent="15" name="post_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="69" parent="15" name="post_type">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="70" parent="15" name="category_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="71" parent="15" name="language">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+      <default-expression>&apos;English&apos;</default-expression>
+    </column>
+    <column id="72" parent="15" name="imdb">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="73" parent="15" name="year">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="74" parent="15" name="directed_by">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="75" parent="15" name="casts">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <column id="76" parent="15" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="77" parent="15" name="user_ip">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="78" parent="15" name="post_views">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="79" parent="15" name="post_flags">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="80" parent="15" name="post_created">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="81" parent="15" name="post_updated">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="82" parent="15" name="post_title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="83" parent="15" name="post_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="84" parent="15" name="post_content">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="85" parent="15" name="post_thumb">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="86" parent="15" name="movie_flv">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="87" parent="15" name="movie_iframe">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="88" parent="15" name="post_tags">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="89" parent="15" name="post_status">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <index id="90" parent="15" name="post_title">
+      <columns>post_title
+post_content</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="91" parent="15" name="PRIMARY">
+      <columns>post_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="92" parent="16" name="set_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="93" parent="16" name="set_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <column id="94" parent="16" name="set_content">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="95" parent="16" name="PRIMARY">
+      <columns>set_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="96" parent="17" name="tag_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="97" parent="17" name="tag_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="98" parent="17" name="post_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="99" parent="17" name="PRIMARY">
+      <columns>tag_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="100" parent="18" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="101" parent="18" name="user_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="102" parent="18" name="user_identifier">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="103" parent="18" name="user_loggedin">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="104" parent="18" name="user_login_ip">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="105" parent="18" name="user_confirmation_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="106" parent="18" name="user_active">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="107" parent="18" name="user_created">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="108" parent="18" name="user_create_ip">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="109" parent="18" name="user_username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="110" parent="18" name="user_fullname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="111" parent="18" name="user_email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="112" parent="18" name="user_password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="113" parent="18" name="user_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="114" parent="18" name="user_website">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="115" parent="18" name="user_about">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="116" parent="18" name="user_avatar">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+      <default-expression>&apos;avatar.png&apos;</default-expression>
+    </column>
+    <column id="117" parent="18" name="user_cover">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1000)|0</data-type>
+      <default-expression>&apos;default.jpg&apos;</default-expression>
+    </column>
+    <column id="118" parent="18" name="user_points">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5000)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="119" parent="18" name="user_group">
+      <mandatory>1</mandatory>
+      <data-type>enum(&apos;1&apos;, &apos;2&apos;, &apos;3&apos;)|0</data-type>
+      <default-expression>&apos;3&apos;</default-expression>
+    </column>
+    <key id="120" parent="18" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="121" parent="19" name="widget_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="122" parent="19" name="widget_title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="123" parent="19" name="widget_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="124" parent="19" name="widget_code">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="125" parent="19" name="PRIMARY">
+      <columns>widget_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
