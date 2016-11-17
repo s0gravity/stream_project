@@ -132,6 +132,10 @@ class Installer {
 		// *** gold_episodes *** //
 		$this->gold_episodes('table');
 
+
+        // *** gold_seasons *** //
+        $this->gold_seasons('table');
+
         // *** gold_links *** //
         $this->gold_links('table');
 
@@ -439,13 +443,15 @@ class Installer {
 		if($type == 'table') {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_episodes` (
-				  `id` int(11) NOT NULL,
+				  `id` int(11) NOT NULL AUTO_INCREMENT,
 				  `movie_id` mediumtext NOT NULL,
 				  `post_id` int(10) unsigned NOT NULL,
+				  `post_title` varchar(1000) NOT NULL,
+				  `season_name` varchar(1000) NOT NULL,
 				  `season_id` int(10) unsigned,
 				  `episode_name` varchar(10000) NOT NULL,
-				  `movie_link` mediumtext NOT NULL,
-				  `movie_iframe` mediumtext NOT NULL,
+				  `movie_link` mediumtext,
+				  `movie_iframe` mediumtext,
 				  PRIMARY KEY (`id`)
 				) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 			");
@@ -456,14 +462,35 @@ class Installer {
 			");
 		}
 	}
+    static function gold_seasons($type) {
+        if($type == 'table') {
+            return mysql_query("
+				CREATE TABLE IF NOT EXISTS `gold_seasons` (
+				  `id` int(11) NOT NULL AUTO_INCREMENT,
+				  `post_id` int(10) unsigned NOT NULL,
+				  `post_title` varchar(1000) NOT NULL,
+                  `name` varchar(100) NOT NULL,
+				  PRIMARY KEY (`id`)
+				) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+			");
+        }
+        if($type == 'insert') {
+            return mysql_query("
+				
+			");
+        }
+    }
     static function gold_links($type) {
         if($type == 'table') {
             return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_links` (
-				  `id` int(11) NOT NULL,
+				  `id` int(11) NOT NULL AUTO_INCREMENT,
 				  `post_id` int(10) unsigned NOT NULL,
 				  `season_id` int(10) unsigned,
 				  `episode_id` int(10) unsigned,
+				  `post_title` varchar(1000) NOT NULL,
+				  `season_name` varchar(1000),
+				  `episode_name` varchar(1000),
 				  `player` varchar(100),
 				  `version` varchar(100),
 				  `quality` varchar(100),
@@ -482,12 +509,12 @@ class Installer {
 		if($type == 'table') {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_posts` (
-				  `post_id` int(10) unsigned NOT NULL,
+				  `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
 				  `post_type` int(1) NOT NULL DEFAULT '0',
 				  `category_id` varchar(1000) NOT NULL,
 				  `language` varchar(1000) NOT NULL DEFAULT 'English',
-				  `imdb` varchar(1000) NOT NULL,
-				  `year` varchar(1000) NOT NULL,
+				  `imdb` varchar(1000),
+				  `year` varchar(1000),
 				  `directed_by` varchar(1000) NOT NULL,
 				  `casts` mediumtext NOT NULL,
 				  `user_id` int(10) unsigned NOT NULL,
