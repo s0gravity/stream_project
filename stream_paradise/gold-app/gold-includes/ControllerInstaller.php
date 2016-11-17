@@ -96,9 +96,10 @@ class Installer {
 		// *** gold_categories *** //
 		$this->gold_categories('table');
         //$this->gold_categories('insert');
-		$this->gold_categories('insert2');
+        $this->gold_categories('insert2');
 
-		// *** gold_flags *** //
+
+        // *** gold_flags *** //
 		$this->gold_flags('table');
 
 		// *** gold_groups *** //
@@ -215,7 +216,7 @@ class Installer {
 				INSERT INTO `gold_categories` (`category_id`, `parent_id`, `title`, `name`, `status`) VALUES
 				(10001, '', 'Films', 'Films', 1),
 				(10002, '', 'Series', 'Series', 1),
-				(10003, '', 'Animes', 'Animes', 1),
+				(10003, '', 'Animes', 'Animes', 1);
 			");
         }
 	}
@@ -504,6 +505,12 @@ class Installer {
 				  `post_tags` varchar(1000) NOT NULL,
 				  `post_status` int(10) unsigned NOT NULL DEFAULT '1',
 				  `post_msa` varchar(1000) NOT NULL,
+				  `post_alt_title` varchar(100),
+				  `rls_date` varchar(100),
+				  `duration` varchar(10),
+				  `origin` varchar(100),
+				  `nb_seasons` int(10) unsigned,
+				  `nb_episodes` int(10) unsigned,
 				  PRIMARY KEY (`post_id`),
 				  FULLTEXT KEY `post_title` (`post_title`,`post_content`)
 				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=1 ;
