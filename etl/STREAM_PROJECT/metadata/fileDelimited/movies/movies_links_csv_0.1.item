@@ -7,7 +7,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OwNzpKhUEeatxJezHCxmQg" label="MOVIE_ROW_ID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OwNzpahUEeatxJezHCxmQg" label="PLAYER" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OwNzpqhUEeatxJezHCxmQg" label="VERSION" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OwNzp6hUEeatxJezHCxmQg" label="QUALITY" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OwNzp6hUEeatxJezHCxmQg" label="QUALITY" length="6" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OwNzqKhUEeatxJezHCxmQg" label="LINK" length="43" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>

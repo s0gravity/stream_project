@@ -444,10 +444,10 @@ class Installer {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_episodes` (
 				  `id` int(11) NOT NULL AUTO_INCREMENT,
-				  `movie_id` mediumtext NOT NULL,
+				  `movie_id` mediumtext,
 				  `post_id` int(10) unsigned NOT NULL,
 				  `post_title` varchar(1000) NOT NULL,
-				  `season_name` varchar(1000) NOT NULL,
+				  `season_name` varchar(1000),
 				  `season_id` int(10) unsigned,
 				  `episode_name` varchar(10000) NOT NULL,
 				  `movie_link` mediumtext,
@@ -536,8 +536,8 @@ class Installer {
 				  `rls_date` varchar(100),
 				  `duration` varchar(10),
 				  `origin` varchar(100),
-				  `nb_seasons` int(10) unsigned,
-				  `nb_episodes` int(10) unsigned,
+				  `nb_seasons` varchar(10),
+				  `nb_episodes` varchar(10),
 				  PRIMARY KEY (`post_id`),
 				  FULLTEXT KEY `post_title` (`post_title`,`post_content`)
 				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=1 ;

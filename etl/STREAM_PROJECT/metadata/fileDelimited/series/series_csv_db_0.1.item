@@ -12,8 +12,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFWaqNEeapptJyXMwsjA" label="ACTORS" length="152" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFWqqNEeapptJyXMwsjA" label="CATEGORIES" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFW6qNEeapptJyXMwsjA" label="ORIGIN" length="34" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFXKqNEeapptJyXMwsjA" label="NB_SEASONS" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFXaqNEeapptJyXMwsjA" label="NB_EPISODES" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFXKqNEeapptJyXMwsjA" label="NB_SEASONS" length="-1" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFXaqNEeapptJyXMwsjA" label="NB_EPISODES" length="-1" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFXqqNEeapptJyXMwsjA" label="DESCRIPTION" length="557" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFX6qNEeapptJyXMwsjA" label="IMAGE" length="152" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IwMFYKqNEeapptJyXMwsjA" label="KEYWORDS" length="300" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>

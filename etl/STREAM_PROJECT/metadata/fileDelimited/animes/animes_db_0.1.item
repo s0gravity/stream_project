@@ -9,7 +9,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu9qqOEeapptJyXMwsjA" label="RLS_DATE" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu96qOEeapptJyXMwsjA" label="DURATION__MIN_" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu-KqOEeapptJyXMwsjA" label="CATEGORIES" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu-aqOEeapptJyXMwsjA" label="NB_EPISODES" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu-aqOEeapptJyXMwsjA" label="NB_EPISODES" length="-1" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu-qqOEeapptJyXMwsjA" label="DESCRIPTION" length="1141" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu-6qOEeapptJyXMwsjA" label="IMAGE" length="116" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W7Lu_KqOEeapptJyXMwsjA" label="KEYWORDS" length="291" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>

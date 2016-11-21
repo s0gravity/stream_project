@@ -11,7 +11,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w0GDKKqNEeapptJyXMwsjA" label="EPISODE_ROW_ID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w0GDKaqNEeapptJyXMwsjA" label="PLAYER" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w0GDKqqNEeapptJyXMwsjA" label="VERSION" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w0GDK6qNEeapptJyXMwsjA" label="QUALITY" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w0GDK6qNEeapptJyXMwsjA" label="QUALITY" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w0GDLKqNEeapptJyXMwsjA" label="LINK" length="43" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
