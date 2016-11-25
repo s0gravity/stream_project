@@ -65,13 +65,13 @@ for option in full_tags[0].findAll("option"):
 f.close()
 #CSV FOR SERIES
 csv_file = csv.writer(open("dps_animes_db_"+str(date_day)+".csv", "wb"),delimiter=';')
-csv_file.writerow(["ROW_ID","TITLE","ALT TITLE","RLS DATE","DURATION (MIN)","CATEGORIES","NB_EPISODES","DESCRIPTION","IMAGE","KEYWORDS"])
+csv_file.writerow(["ROW_ID","ID","TITLE","ALT TITLE","RLS DATE","DURATION (MIN)","CATEGORIES","NB_EPISODES","DESCRIPTION","IMAGE","KEYWORDS"])
 #CSV FOR EPISODES
 csv_file_episodes = csv.writer(open("dps_animes_db_episodes_"+str(date_day)+".csv", "a"),delimiter=';')
-csv_file_episodes.writerow(["ROW_ID","SERIE_TITLE","SERIE_ROW_ID","NAME"])
+csv_file_episodes.writerow(["ROW_ID","ANIME_ID","SERIE_TITLE","SERIE_ROW_ID","NAME"])
 #CSV FOR LINKS
 csv_file_links = csv.writer(open("dps_animes_db_links_"+str(date_day)+".csv", "a"),delimiter=';')
-csv_file_links.writerow(["SERIE_TITLE","SERIE_ROW_ID","EPISODE_NAME","EPISODE_ROW_ID","PLAYER","VERSION","QUALITY","LINK"])
+csv_file_links.writerow(["ANIME_ID","SERIE_TITLE","SERIE_ROW_ID","EPISODE_NAME","EPISODE_ROW_ID","PLAYER","VERSION","QUALITY","LINK"])
 anime_row_id=0
 episode_row_id=0
 for i in range(nb_pages):
@@ -98,6 +98,12 @@ for i in range(nb_pages):
             print 'REQUEST ERROR'
             print req
         soup = BeautifulSoup(html)
+        #ID
+        tags = soup.findAll("a", {"class" : "follow-btn"})
+        row['id'] = ''
+        if tags:
+            row['id']=tags[0]['onclick']
+            if row['id'] != '':row['id'] = int(row['id'][14:-1])
         #TITLE
         tags = soup.findAll("span", {"class" : "tv_title"})
         if tags:
@@ -181,7 +187,7 @@ for i in range(nb_pages):
                 episode_soup = BeautifulSoup(html)
                 episode_name = episode_soup.findAll("span",{"id" : "episodeTitle"})
                 episode_name = episode_name and episode_name[0].getText() or "ND"
-                csv_file_episodes.writerow([episode_row_id,str(row['title']).strip(),anime_row_id,episode_name.strip()])
+                csv_file_episodes.writerow([episode_row_id,row['id'],str(row['title']).strip(),anime_row_id,episode_name.strip()])
                 #LINKS
                 for number in ['0','1','2','3','4','5','6','7','8','9','10']:
                     tr_nodes = episode_soup.findAll("tr", {"id" : str(number)})
@@ -190,6 +196,7 @@ for i in range(nb_pages):
                         a_nodes = td_nodes[5].find_all("a")
                         link_row={
                              'anime_title':row['title'],
+                             'anime_id':row['id'],
                              'anime_row_id':anime_row_id,
                              'episode_name':episode_name,
                              'episode_row_id':episode_row_id,
@@ -198,11 +205,11 @@ for i in range(nb_pages):
                              'quality':td_nodes and td_nodes[2].getText() or 'ND',
                              'link':a_nodes and a_nodes[0].get("href") or "ND",
                              }
-                        csv_file_links.writerow([str(link_row['anime_title']).strip(),link_row['anime_row_id'],
+                        csv_file_links.writerow([link_row['anime_id'],str(link_row['anime_title']).strip(),link_row['anime_row_id'],
                                            link_row['episode_name'].strip(),link_row['episode_row_id'],str(link_row['player']).strip(),
                                            str(link_row['version']).strip(),str(link_row['quality']).strip(),str(link_row['link']).strip()
                                            ])
 
-        csv_file.writerow([anime_row_id,str(row['title']).strip(),str(row['a_title']).strip(),str(row['rls_date']).strip(),
+        csv_file.writerow([anime_row_id,row['id'],str(row['title']).strip(),str(row['a_title']).strip(),str(row['rls_date']).strip(),
                            str(row['duration']).strip(),str(row['categories']).strip(),row['nb_episodes'],str(row['description']).strip(),
                            str(row['image']).strip(),row['keywords'].strip()])

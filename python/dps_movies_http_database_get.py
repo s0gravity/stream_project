@@ -65,10 +65,10 @@ for option in full_tags[0].findAll("option"):
 f.close()
 #CSV FOR MOVIES
 csv_file = csv.writer(open("dps_movies_db_"+str(date_day)+".csv", "wb"),delimiter=';')
-csv_file.writerow(["ROW_ID","TITLE","ALT TITLE","RLS DATE","YEAR","DURATION (MIN)","DIRECTORS","ACTORS","CATEGORIES","ORIGIN","DESCRIPTION","IMAGE","KEYWORDS"])
+csv_file.writerow(["ROW_ID","ID","TITLE","ALT TITLE","RLS DATE","YEAR","DURATION (MIN)","DIRECTORS","ACTORS","CATEGORIES","ORIGIN","DESCRIPTION","IMAGE","KEYWORDS"])
 #CSV FOR LINKS
 csv_file_links = csv.writer(open("dps_movies_db_links_"+str(date_day)+".csv", "a"),delimiter=';')
-csv_file_links.writerow(["MOVIE_TITLE","MOVIE_ROW_ID","PLAYER","VERSION","QUALITY","LINK"])
+csv_file_links.writerow(["MOVIE_ID","MOVIE_TITLE","MOVIE_ROW_ID","PLAYER","VERSION","QUALITY","LINK"])
 movie_row_id=0
 for i in range(nb_pages):
     print "Parsing page : ",i+1,"/",nb_pages
@@ -94,6 +94,12 @@ for i in range(nb_pages):
             print 'REQUEST ERROR'
             print req
         soup = BeautifulSoup(html)
+        #ID
+        tags = soup.findAll("a", {"class" : "follow-btn"})
+        row['id'] = ''
+        if tags:
+            row['id']=tags[0]['onclick']
+            if row['id'] != '':row['id'] = int(row['id'][14:-1])
         #TITLE
         tags = soup.findAll("span", {"class" : "tv_title"})
         if tags:
@@ -194,18 +200,19 @@ for i in range(nb_pages):
                 a_nodes = td_nodes[5].find_all("a")
                 link_row={
                      'movie_title':row['title'],
+                     'movie_id':row['id'],
                      'movie_row_id':movie_row_id,
                      'player':td_nodes and td_nodes[0].getText() or 'ND',
                      'version':td_nodes and td_nodes[1].getText() or 'ND',
                      'quality':td_nodes and td_nodes[2].getText() or 'ND',
                      'link':a_nodes and a_nodes[0].get("href") or "ND",
                      }
-                csv_file_links.writerow([str(link_row['movie_title']).strip(),link_row['movie_row_id'],
+                csv_file_links.writerow([link_row['movie_id'],str(link_row['movie_title']).strip(),link_row['movie_row_id'],
                                    str(link_row['player']).strip(),str(link_row['version']).strip(),
                                    str(link_row['quality']).strip(),str(link_row['link']).strip()
                                    ])
 
-        csv_file.writerow([movie_row_id,str(row['title']).strip(),str(row['a_title']).strip(),str(row['rls_date']).strip(),
+        csv_file.writerow([movie_row_id,row['id'],str(row['title']).strip(),str(row['a_title']).strip(),str(row['rls_date']).strip(),
                            str(row['year']).strip(),str(row['duration']).strip(),str(row['directors']).strip(),
                            str(row['actors']).strip(),str(row['categories']).strip(),str(row['countryoforigin']).strip(),
                            str(row['description']).strip(),str(row['image']).strip(),row['keywords'].strip()])

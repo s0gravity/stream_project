@@ -65,16 +65,16 @@ for option in full_tags[0].findAll("option"):
 f.close()
 #CSV FOR SERIES
 csv_file = csv.writer(open("dps_series_db_"+str(date_day)+".csv", "wb"),delimiter=';')
-csv_file.writerow(["ROW_ID","TITLE","ALT TITLE","RLS DATE","DURATION (MIN)","DIRECTORS","ACTORS","CATEGORIES","ORIGIN","NB_SEASONS","NB_EPISODES","DESCRIPTION","IMAGE","KEYWORDS"])
+csv_file.writerow(["ROW_ID","ID","TITLE","ALT TITLE","RLS DATE","DURATION (MIN)","DIRECTORS","ACTORS","CATEGORIES","ORIGIN","NB_SEASONS","NB_EPISODES","DESCRIPTION","IMAGE","KEYWORDS"])
 #CSV FOR SEASONS
 csv_file_seasons = csv.writer(open("dps_series_db_seasons_"+str(date_day)+".csv", "a"),delimiter=';')
-csv_file_seasons.writerow(["ROW_ID","SERIE_TITLE","SERIE_ROW_ID","NAME"])
+csv_file_seasons.writerow(["ROW_ID","SERIE_ID","SERIE_TITLE","SERIE_ROW_ID","NAME"])
 #CSV FOR EPISODES
 csv_file_episodes = csv.writer(open("dps_series_db_episodes_"+str(date_day)+".csv", "a"),delimiter=';')
-csv_file_episodes.writerow(["ROW_ID","SERIE_TITLE","SERIE_ROW_ID","SEASON_NAME","SEASON_ROW_ID","NAME"])
+csv_file_episodes.writerow(["ROW_ID","SERIE_ID","SERIE_TITLE","SERIE_ROW_ID","SEASON_NAME","SEASON_ROW_ID","NAME"])
 #CSV FOR LINKS
 csv_file_links = csv.writer(open("dps_series_db_links_"+str(date_day)+".csv", "a"),delimiter=';')
-csv_file_links.writerow(["SERIE_TITLE","SERIE_ROW_ID","SEASON_NAME","SEASON_ROW_ID","EPISODE_NAME","EPISODE_ROW_ID","PLAYER","VERSION","QUALITY","LINK"])
+csv_file_links.writerow(["SERIE_ID","SERIE_TITLE","SERIE_ROW_ID","SEASON_NAME","SEASON_ROW_ID","EPISODE_NAME","EPISODE_ROW_ID","PLAYER","VERSION","QUALITY","LINK"])
 serie_row_id=0
 season_row_id =0
 episode_row_id=0
@@ -102,6 +102,12 @@ for i in range(nb_pages):
             print 'REQUEST ERROR'
             print req
         soup = BeautifulSoup(html)
+        #ID
+        tags = soup.findAll("a", {"class" : "follow-btn"})
+        row['id'] = ''
+        if tags:
+            row['id']=tags[0]['onclick']
+            if row['id'] != '':row['id'] = int(row['id'][14:-1])
         #TITLE
         tags = soup.findAll("span", {"class" : "tv_title"})
         if tags:
@@ -204,7 +210,7 @@ for i in range(nb_pages):
             season_row_id+=1
             season_name = s.findAll("span", {"itemprop" : "name"})
             s_name = season_name and season_name[0].getText() or 'ND'
-            csv_file_seasons.writerow([season_row_id,str(row['title']).strip(),serie_row_id,str(s_name).strip()])
+            csv_file_seasons.writerow([season_row_id,row['id'],str(row['title']).strip(),serie_row_id,str(s_name).strip()])
             #EPISODES
             episodes = s.findAll("tr", {"class" : "item normalEpisode"})
             for ep in episodes:
@@ -214,7 +220,7 @@ for i in range(nb_pages):
                     href_tag = episode_tag[0].findAll("a")
                     episode_name = episode_tag[0].findAll("span",{"itemprop" : "name"})
                     episode_name = episode_name and episode_name[0].getText() or "ND"
-                    csv_file_episodes.writerow([episode_row_id,str(row['title']).strip(),serie_row_id,str(s_name).strip(),season_row_id,episode_name.strip()])
+                    csv_file_episodes.writerow([episode_row_id,row['id'],str(row['title']).strip(),serie_row_id,str(s_name).strip(),season_row_id,episode_name.strip()])
                     #LINKS
                     if href_tag:
                         episode_page = href_tag[0].get('href')
@@ -233,6 +239,7 @@ for i in range(nb_pages):
                                 a_nodes = td_nodes[5].find_all("a")
                                 link_row={
                                      'serie_title':row['title'],
+                                     'serie_id':row['id'],
                                      'serie_row_id':serie_row_id,
                                      'season_name':s_name,
                                      'season_row_id':season_row_id,
@@ -243,13 +250,13 @@ for i in range(nb_pages):
                                      'quality':td_nodes and td_nodes[2].getText() or 'ND',
                                      'link':a_nodes and a_nodes[0].get("href") or "ND",
                                      }
-                                csv_file_links.writerow([str(link_row['serie_title']).strip(),link_row['serie_row_id'],
+                                csv_file_links.writerow([link_row['serie_id'],str(link_row['serie_title']).strip(),link_row['serie_row_id'],
                                                    link_row['season_name'].strip(),link_row['season_row_id'],link_row['episode_name'].strip(),
                                                    link_row['episode_row_id'],str(link_row['player']).strip(),str(link_row['version']).strip(),
                                                    str(link_row['quality']).strip(),str(link_row['link']).strip()
                                                    ])
 
-        csv_file.writerow([serie_row_id,str(row['title']).strip(),str(row['a_title']).strip(),str(row['rls_date']).strip(),
+        csv_file.writerow([serie_row_id,row['id'],str(row['title']).strip(),str(row['a_title']).strip(),str(row['rls_date']).strip(),
                            str(row['duration']).strip(),str(row['directors']).strip(),
                            str(row['actors']).strip(),str(row['categories']).strip(),str(row['countryoforigin']).strip(),
                            row['nb_seasons'],row['nb_episodes'],str(row['description']).strip(),
