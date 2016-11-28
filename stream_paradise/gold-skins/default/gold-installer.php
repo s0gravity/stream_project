@@ -1,7 +1,7 @@
 <?php
 
 class GOLD_MEDIA_Installer {
-	var $templateName='default';
+	var $templateName='custom1';
 	public function getCurrentTemplatePath()
 	{
 		return 'gold-skins/'.$this->templateName.'';

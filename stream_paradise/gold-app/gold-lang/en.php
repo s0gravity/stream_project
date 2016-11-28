@@ -171,6 +171,7 @@
 	$LANG['back_to_admin'] = "Back to Admin";
 	$LANG['movie_title'] = "Movie Title";
 	$LANG['movie_year'] = "Movie Year";
+    $LANG['release_date'] = "Release Date";
 	$LANG['imdb_rating'] = "IMDb Rating";
 	$LANG['fetch_movie'] = "Fetch Movie";
 	$LANG['movie_description'] = "Movie Description";

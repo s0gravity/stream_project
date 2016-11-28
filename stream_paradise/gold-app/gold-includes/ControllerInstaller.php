@@ -509,7 +509,7 @@ class Installer {
 		if($type == 'table') {
 			return mysql_query("
 				CREATE TABLE IF NOT EXISTS `gold_posts` (
-				  `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `post_id` int(10) unsigned NOT NULL,
 				  `post_type` int(1) NOT NULL DEFAULT '0',
 				  `category_id` varchar(1000) NOT NULL,
 				  `language` varchar(1000) NOT NULL DEFAULT 'English',
@@ -599,8 +599,8 @@ class Installer {
 				(10, 'gold_website_keywords', 'Films, streaming, HD, Films en ligne, series, animes, STREAM PARADISE'),
 				(11, 'gold_max_related_media', '5'),
 				(12, 'gold_max_tags', '20'),
-				(13, 'gold_skin', 'custom1'),
-				(14, 'gold_lang', 'en'),
+				(13, 'gold_skin', 'default'),
+				(14, 'gold_lang', 'fr'),
 				(15, 'points_posting_a_media', '2'),
 				(16, 'points_per_up_vote_on_your_media', '1'),
 				(17, 'points_per_down_vote_on_your_media', '1'),

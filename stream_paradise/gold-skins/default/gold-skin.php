@@ -87,7 +87,7 @@ class GOLD_MEDIA extends SkinFunctions {
 <title>'.$this->set('gold_website_title').'</title>
 <description>'.$this->set('gold_website_description').'</description>
 <link>'.$this->GOLD_ROOT().'</link>';
-$get_articles = "SELECT * FROM gold_posts WHERE post_status='1' ORDER BY post_id DESC";
+$get_articles = "SELECT * FROM gold_posts WHERE post_status='1' order by post_id DESC";
 
 $articles = mysql_query($get_articles) or die(mysql_error());
 
@@ -135,7 +135,7 @@ echo '
 
 
 
-$get_articles = "SELECT * FROM gold_posts WHERE post_status='1' ORDER BY post_id DESC";
+$get_articles = "SELECT * FROM gold_posts WHERE post_status='1' order by post_id DESC";
 $articles = mysql_query($get_articles) or die(mysql_error());
 while ($article = mysql_fetch_array($articles)){
         $GOLD_CHECK_CATEGORY = mysql_query("SELECT * FROM gold_categories WHERE category_id='".$article['category_id']."'");
@@ -256,6 +256,10 @@ echo "
 	<meta property="site_name" content="'.$this->set('gold_website_title').'" />
 	<meta property="description" content="'.$this->set('gold_website_description').'" />
 	<meta property="url" content="'.$this->GOLD_ROOT().'" />
+	<meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />
 	<link rel="stylesheet" href="'.$this->getCurrentTemplatePath().'/gold-styles.css">
 	<link href="'.$this->getCurrentTemplatePath().'/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="'.$this->getCurrentTemplatePath().'/font-awesome.min.css">
@@ -263,10 +267,15 @@ echo "
 </head>
 		');
 	} else {
-		$query = mysql_query("SELECT * FROM gold_posts WHERE post_name='".$this->GOLD_REQUEST('sub2_gold')."' ORDER BY post_id LIMIT 1");
+		$query = mysql_query("SELECT * FROM gold_posts WHERE post_name='".$this->GOLD_REQUEST('sub2_gold')."' order by post_id DESC LIMIT 1");
 		while($row = mysql_fetch_array($query)) {
 		// Movie Information
-		$image = ''.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$row['post_thumb'];
+        if($row['post_type'] == '0') {
+            $image = ''.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$row['post_thumb'];
+        }
+        elseif($row['post_type'] == '1'){
+            $image = $row['post_thumb'];
+        }
 		$category = mysql_fetch_array(mysql_query("SELECT * FROM gold_categories WHERE category_id='".$row['category_id']."'"));
 		$categories = $row['category_id'];
 		$cats = explode(",", $categories);
@@ -461,7 +470,7 @@ $GOLD_html .= $this->output('<form method="GET" action="'.$this->GOLD_ROOT().'se
                         <div id="select-movie-genre" class="select-genre-categories" style="display: none;">
                             <div class="select-genre-categories-inner">
                                 <ul>');
-				$genre[query] = mysql_query("SELECT * FROM gold_categories WHERE status='1'");
+				$genre[query] = mysql_query("SELECT * FROM gold_categories WHERE status='1' AND type = 'movie' ");
 				while($genre[row] = mysql_fetch_array($genre[query])) {
 					$GOLD_body .= $this->output('<li><a href="'.$this->GOLD_ROOT().'genre/'.$genre[row]['name'].'" class="'.$genre[row]['title'].'">'.$genre[row]['title'].'</a></li>');
 				}
@@ -476,11 +485,9 @@ $GOLD_html .= $this->output('<form method="GET" action="'.$this->GOLD_ROOT().'se
                     <div id="sort-by">
                         <div id="filter-by">
                         	<span>'.$this->LANG('filter_by').':</span>
-                        	<a href="'.$this->GOLD_ROOT().'sort/title/'.$cat_sort.'" class="title-sort-btn" data-order="asc" title="'.$this->LANG('title').'">'.$this->LANG('title').'</a> <span class="filter-line"></span>
-                        	<a href="'.$this->GOLD_ROOT().'sort/rating/'.$cat_sort.'" class="rating-sort-btn" data-order="desc" title="'.$this->LANG('rating').'">'.$this->LANG('rating').'</a> <span class="filter-line"></span>
-                        	<a href="'.$this->GOLD_ROOT().'sort/year/'.$cat_sort.'" class="date-sort-btn" data-order="desc" title="'.$this->LANG('year').'">'.$this->LANG('year').'</a> <span class="filter-line"></span>
-                        	<a href="'.$this->GOLD_ROOT().'sort/views/'.$cat_sort.'" class="views-sort-btn" data-order="desc" title="'.$this->LANG('views').'">'.$this->LANG('views').'</a> <span class="filter-line"></span>
-                        	<div class="imdb-sort"><a href="'.$this->GOLD_ROOT().'sort/imdb/'.$cat_sort.'" class="imdb"><i class="icon"></i>IMDB</a></div>
+                        	<a href="'.$this->GOLD_ROOT().'sort/release_date/'.$cat_sort.'" class="views-sort-btn" data-order="desc" title="'.$this->LANG('release_date').'">'.$this->LANG('release_date').'</a> <span class="filter-line"></span>
+                        	<a href="'.$this->GOLD_ROOT().'sort/year/'.$cat_sort.'" class="date-sort-btn" data-order="desc" title="'.$this->LANG('movie_year').'">'.$this->LANG('movie_year').'</a> <span class="filter-line"></span>
+                        	<a href="'.$this->GOLD_ROOT().'sort/views/'.$cat_sort.'" class="views-sort-btn" data-order="desc" title="'.$this->LANG('views').'">'.$this->LANG('views').'</a> 
                         </div>
                     </div>
         </div>
@@ -720,15 +727,36 @@ $post_type .= '
   	}
   }
 
-  	if($searchMovieImage != '') {
+  	/*if($searchMovieImage != '') {
 		$GOLD_html .= $this->output('
 			<div class="post_preview" style="background: #565558 url('.$searchMovieImage.'); background-size: 960px;">
 				<div id="left-wrapper"></div>
 				<div id="right-wrapper"></div>');
   	} else {
 		$GOLD_html .= $this->output('<div class="post_preview">');
-  	}
-  	if($media['movie_iframe'] != '') { $post_type='<iframe src="'.$media['movie_iframe'].'" frameborder="0" style="width: 920px; height: 510px;"></iframe>'; }
+  	}*/
+  	//LINKS
+    $GOLD_html .= $this->output('<div class="post_preview">');
+    $GOLD_html .= $this->output('<div id="left-wrapper"></div>');
+    $GOLD_html .= $this->output('<div id="right-wrapper"></div>');
+    $links_req = mysql_query("SELECT * FROM gold_links WHERE post_id='".$media['post_id']."'");
+    while($link = mysql_fetch_array($links_req)) {
+          $post_type.='<a href="'.$link['link'].'" ">LINK</a>';
+      }
+      $GOLD_html .= $this->output('<div class="player" >'.$post_type.'</div></div>');
+      $GOLD_html .= $this->output('<div class="wrap cf" style="max-width: 920px;"><div class="full_wrap cf">');
+      /*while($link = mysql_fetch_array($links_req)) {
+        $post_type='<iframe src="'.$link['link'].'" frameborder="0" style="width: 920px; height: 510px;"></iframe>';
+        $GOLD_html .= $this->output('
+		<div class="player">
+		'.$post_type.'
+				
+		</div>
+	</div>');
+    $GOLD_html .= $this->output('<div class="wrap cf" style="max-width: 920px;"><div class="full_wrap cf">');
+          }*/
+
+  	/*if($media['movie_iframe'] != '') { $post_type='<iframe src="'.$media['movie_iframe'].'" frameborder="0" style="width: 920px; height: 510px;"></iframe>'; }
 	$GOLD_html .= $this->output('
 		<div class="player">
 		'.$post_type.'
@@ -738,7 +766,7 @@ $post_type .= '
 
 	<div class="wrap cf" style="max-width: 920px;">
 
-		<div class="full_wrap cf">'); 
+		<div class="full_wrap cf">');*/
 	  
 	  
 	  $GOLD_html .= $this->output('<div class="wrap_high" style="float: left; padding-bottom: 100px;">
@@ -751,7 +779,7 @@ $post_type .= '
 			$post_type = ''.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$media['post_thumb'].'';
 		}
     	elseif($media['post_type'] == '1') {
-			$post_type = ''.$media['post_img'].'';
+			$post_type = ''.$media['post_thumb'].'';
      	}
 		$directed_by = $media['directed_by'];
 		$directed = explode(", ", $directed_by);
@@ -759,7 +787,7 @@ $post_type .= '
 			$rejisori = "<a href='".$this->GOLD_ROOT()."producer/".$rejisori."'>".str_replace(".", "", $rejisori)."</a>";
 		}
 		$rejisorebi = implode(", ", $directed);
-		
+
 		$casts_by = $media['casts'];
 		$casts_explode = explode(", ", $casts_by);
 		foreach($casts_explode as &$casts_to) {
@@ -810,12 +838,7 @@ $post_type .= '
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('language_title').':</div><div class="movie_desc_content"><a>'.$media['language'].'</a></div></div>
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('producer_title').':</div><div class="movie_desc_content">'.$rejisorebi.'</div></div>
 							<div class="movie_desc_row" style="line-height: 15px; padding-top: 3px; padding-bottom: 8px; border-bottom: 1px solid rgb(202, 202, 202); border-bottom-style: dotted;"><div class="movie_desc_title">'.$this->LANG('actors_title').':</div> <font style="float: none; font-family: Arial; font-size: 10px; font-weight: bold; color: #000; position: relative; top: -1px;">'.$casts.'</font></div>
-							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 70px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
-							<div style="display: inline-block; position: relative; bottom: -10px; width: 350px;">
-								<div style="display: inline-block;position: absolute;bottom: 0;width: 100%;">
-									<div class="imdb-badge arrow" style="display: inline-block;"><span>'.$media['imdb'].'</span></div>
-								</div>
-							</div>
+							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 150px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
 						</div>
 					</div>
 				</div>
@@ -947,8 +970,9 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 			}
 	
 	$GOLD_html .= $this->GOLD_sidebar($media['post_id'], $media['user_id'], $media['post_title'], $media['category_id']);
-		$GOLD_html .= $this->output('</div>'); 
+    $GOLD_html .= $this->output('</div>');
 	}
+
     return $GOLD_html;
   }
   
@@ -961,16 +985,20 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	$limit = $content.", ".$this->set('gold_rows');
 
 	if($sort == '') {
-		$q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY post_id DESC LIMIT ".$limit."");
+		$q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' order by post_id DESC LIMIT ".$limit."");
 	} elseif($sort == 'recent') {
-	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY post_id DESC LIMIT ".$limit."");
+	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' order by post_id DESC LIMIT ".$limit."");
 	} elseif($sort == 'title') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY post_title ASC LIMIT ".$limit."");
 	} elseif($sort == 'rating') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_created > DATE_SUB(NOW(), INTERVAL 1 YEAR) AND post_status='1' ORDER BY post_views DESC LIMIT 100");
 	} elseif($sort == 'year') {
-	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY year ASC LIMIT ".$limit."");
-	} elseif($sort == 'imdb') {
+	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY year DESC LIMIT ".$limit."");
+	}
+      elseif($sort == 'release_date') {
+        $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY rls_date DESC LIMIT ".$limit."");
+    }
+	elseif($sort == 'imdb') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY imdb DESC LIMIT ".$limit."");
 	} elseif($sort == 'hot') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_created > DATE_SUB(NOW(), INTERVAL 3 YEAR) AND post_status='1' ORDER BY post_views DESC LIMIT ".$limit."");
@@ -982,7 +1010,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '%".$category."%' AND post_status='1' ORDER BY post_views DESC LIMIT ".$limit."");
 	}
 	echo $this->GOLD_box($q, $content);
-	
+
 	$GOLD_html .= $this->output('</div>'); 
     return $GOLD_html;
   }
@@ -994,18 +1022,21 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	
 	if (!isset($_REQUEST['content']) or !is_numeric($_REQUEST['content'])) { $content = 0; } else { $content = (int)$_REQUEST['content']; }
 	$limit = $content.", ".$this->set('gold_rows');
-	
+
 	if($sort == '') {
-		$q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' ORDER BY post_id DESC LIMIT ".$limit."");
+		$q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' order by post_id DESC LIMIT ".$limit."");
 	} elseif($sort == 'recent') {
-	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' ORDER BY post_id DESC LIMIT ".$limit."");
+	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' order by post_id DESC LIMIT ".$limit."");
 	} elseif($sort == 'title') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' ORDER BY post_title ASC LIMIT ".$limit."");
 	} elseif($sort == 'rating') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_created > DATE_SUB(NOW(), INTERVAL 1 YEAR) AND post_status='1' ORDER BY post_views DESC LIMIT 100");
 	} elseif($sort == 'year') {
-	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' ORDER BY year ASC LIMIT ".$limit."");
+	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' ORDER BY year DESC LIMIT ".$limit."");
 	} elseif($sort == 'imdb') {
+    } elseif($sort == 'release_date') {
+        $q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' ORDER BY rls_date DESC LIMIT ".$limit."");
+    } elseif($sort == 'imdb') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_status='1' ORDER BY imdb DESC LIMIT ".$limit."");
 	} elseif($sort == 'hot') {
 	    $q = mysql_query("SELECT * FROM gold_posts WHERE post_created > DATE_SUB(NOW(), INTERVAL 1 YEAR) AND post_status='1' ORDER BY post_views DESC LIMIT 100") or die(mysql_error());
@@ -1018,8 +1049,9 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	}
 
 	echo $this->GOLD_box($q, $content);
-	
-	$GOLD_html .= $this->output('</div>'); 
+
+	$GOLD_html .= $this->output('</div>');
+    //$GOLD_html .= $this->pagination('gold_posts', 'rls_date', 10);
     return $GOLD_html;
   }
   
@@ -1032,7 +1064,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	
 	$page = $_GET['sub2_gold'];
 	if($page == '') { 
-		$query_1 = mysql_query('SELECT * FROM gold_posts ORDER BY post_id DESC');
+		$query_1 = mysql_query('SELECT * FROM gold_posts order by post_id DESC');
 		while($tags = mysql_fetch_array($query_1)) {
 			$GOLD_CHECK_CATEGORY = mysql_query("SELECT * FROM `gold_categories` WHERE category_id = '".$tags['category_id']."%'");
 			$GOLD_CATEGORY = mysql_fetch_array($GOLD_CHECK_CATEGORY);
@@ -1115,13 +1147,13 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	$GOLD_html .= $this->output('<ul class="ul_category">');
 	
 	while($media = mysql_fetch_array($q)) {
-		$media_post_num = mysql_num_rows(mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '".$media['category_id']."' AND post_status='1'"));
+		$media_post_num = mysql_num_rows(mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '".$media['category_id']."' AND post_status='1' order by post_id DESC"));
 		$GOLD_html .= $this->output('<li><a href="'.$this->GOLD_ROOT().'genre/'.$media['name'].'" class="category">'.$media['title'].'</a>');
 		
 		$q2 = mysql_query("SELECT * FROM gold_categories WHERE parent_id='".$media['category_id']."' ORDER BY category_id ASC");
 			$GOLD_html .= $this->output('<ul class="ul_category">');
 		while($media2 = mysql_fetch_array($q2)) {
-			$media2_post_num = mysql_num_rows(mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '".$media2['category_id'].",' AND post_status='1'"));
+			$media2_post_num = mysql_num_rows(mysql_query("SELECT * FROM gold_posts WHERE category_id LIKE '".$media2['category_id'].",' AND post_status='1' order by post_id DESC"));
     			$GOLD_html .= $this->output('<li style="list-style-type: square;"><a href="'.$this->GOLD_ROOT().'genre/'.$media2['name'].'" class="category">'.$media2['title'].'</a></li>');
 		}
 			$GOLD_html .= $this->output('</ul>');
@@ -1229,9 +1261,9 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 				<span class="content" style="margin-top: 5px; margin-bottom: 0px;width: 144px;">
 					<div style="margin-bottom: -1px;">
 						<ul class="categories">';
-							$query_of_categories = mysql_query("SELECT * FROM gold_categories WHERE status='1'");
+							$query_of_categories = mysql_query("SELECT * FROM gold_categories WHERE status='1' and type = 'movie' ");
 							while($category = mysql_fetch_array($query_of_categories)) {
-								if($this->GOLD_REQUEST("sub_gold") == $category['name']) { $active = "style='color: rgb(255, 0, 0); text-decoration: none;'"; } elseif($this->GOLD_REQUEST("sub_gold") != $category['name']) { $active = ''; }
+								if($this->GOLD_REQUEST("sub_gold") == $category['name']) { $active = "style='color: rgb(107, 79, 100); font-weight: bold; text-decoration: none;'"; } elseif($this->GOLD_REQUEST("sub_gold") != $category['name']) { $active = ''; }
 								$block['categories'] .= "<li><a href='".$this->GOLD_ROOT().'genre/'.$category['name']."' ".$active.">".$category['title']."</a></li>";
 							}
 			
@@ -1251,8 +1283,14 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 						while($popular_movies = mysql_fetch_array($POPULAR_MOVIES_QUERY)) {
 							$GOLD_CHECK_CATEGORY_second = mysql_query("SELECT * FROM `gold_categories` WHERE category_id = '".$popular_movies['category_id']."%'");
 							$GOLD_CATEGORY_second = mysql_fetch_array($GOLD_CHECK_CATEGORY_second);
-							$block['categories'] .= '<div class="pop_img"><a href="'.$this->GOLD_ROOT().$GOLD_CATEGORY_second['name'].'/'.$popular_movies['post_name'].'"><img src="'.$this->GOLD_ROOT().'gold-app/gold-uploads/media/'.$popular_movies['post_thumb'].'" alt="'.$popular_movies['post_title'].'" title="'.$popular_movies['post_title'].'" style="width: 130px; height: 185px;"></div>';
-						}
+                            if($popular_movies['post_type'] == '0') {
+                                $block['categories'] .= '<div class="pop_img"><a href="' . $this->GOLD_ROOT() . $GOLD_CATEGORY_second['name'] . '/' . $popular_movies['post_name'] . '"><img src="' . $this->GOLD_ROOT() . 'gold-app/gold-uploads/media/' . $popular_movies['post_thumb'] . '" alt="' . $popular_movies['post_title'] . '" title="' . $popular_movies['post_title'] . '" style="width: 130px; height: 185px;"></div>';
+                            }
+                            elseif($popular_movies['post_type'] == '1') {
+                                $block['categories'] .= '<div class="pop_img"><a href="' . $this->GOLD_ROOT() . $GOLD_CATEGORY_second['name'] . '/' . $popular_movies['post_name'] . '"><img src="' . $popular_movies['post_thumb'] . '" alt="' . $popular_movies['post_title'] . '" title="' . $popular_movies['post_title'] . '" style="width: 130px; height: 185px;"></div>';
+                            }
+
+                        }
 			$block['categories'] .= '
 					</div>
 				</span>
@@ -1418,26 +1456,26 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 				$GOLD_html .= $this->output('</div>');
 			} elseif($this->GOLD_REQUEST('sub2_gold') == 'wall') {
 				$GOLD_html .= $this->output('<div class="wrap_normal container_page" style="float: left;">');
-					$no_sql = mysql_query("SELECT * FROM gold_posts WHERE user_id='".$media['user_id']."' AND post_status='1' ORDER BY post_id DESC");
+					$no_sql = mysql_query("SELECT * FROM gold_posts WHERE user_id='".$media['user_id']."' AND post_status='1' order by post_id DESC");
 					if(mysql_num_rows($no_sql) == '0') {
 						$GOLD_html .= $this->output('<div class="no_results">');
 							$GOLD_html .= $this->output('<img src="'.$this->getCurrentTemplatePath().'/images/icon-results.png" style="width: 111px;">');
 							$GOLD_html .= $this->output('<span style="font-size: 25px;font-weight: normal;display: block;">'.$this->LANG('no_results').'</span>');
 						$GOLD_html .= $this->output('</div>');
 					} else {
-						$GOLD_html .= $this->GOLD_box(mysql_query("SELECT * FROM gold_posts WHERE user_id='".$media['user_id']."' AND post_status='1' ORDER BY post_id DESC LIMIT ".$limit.""), $content, "wall");
+						$GOLD_html .= $this->GOLD_box(mysql_query("SELECT * FROM gold_posts WHERE user_id='".$media['user_id']."' AND post_status='1' order by post_id DESC LIMIT ".$limit.""), $content, "wall");
 					}
 				$GOLD_html .= $this->output('</div>');
 			} elseif($this->GOLD_REQUEST('sub2_gold') == 'favorites') {
 				$GOLD_html .= $this->output('<div class="wrap_normal container_page" style="width: 592px; float: left;">');
-					$no_sql = mysql_query("SELECT posts.*, votes.* FROM gold_posts posts, gold_favorites votes WHERE posts.post_id=votes.post_id AND votes.user_id='".$media['user_id']."' AND posts.post_status='1' ORDER BY posts.post_id DESC");
+					$no_sql = mysql_query("SELECT posts.*, votes.* FROM gold_posts posts, gold_favorites votes WHERE posts.post_id=votes.post_id AND votes.user_id='".$media['user_id']."' AND posts.post_status='1' ORDER BY posts.post_id ASC");
 					if(mysql_num_rows($no_sql) == '0') {
 						$GOLD_html .= $this->output('<div class="no_results">');
 							$GOLD_html .= $this->output('<img src="'.$this->getCurrentTemplatePath().'/images/icon-results.png" style="width: 111px;">');
 							$GOLD_html .= $this->output('<span style="font-size: 25px;font-weight: normal;display: block;">'.$this->LANG('no_results').'</span>');
 						$GOLD_html .= $this->output('</div>');
 					} else {
-						$GOLD_html .= $this->GOLD_box(mysql_query("SELECT posts.*, votes.* FROM gold_posts posts, gold_favorites votes WHERE posts.post_id=votes.post_id AND votes.user_id='".$media['user_id']."' AND posts.post_status='1' ORDER BY posts.post_id DESC LIMIT ".$limit.""), $content, "favorites");
+						$GOLD_html .= $this->GOLD_box(mysql_query("SELECT posts.*, votes.* FROM gold_posts posts, gold_favorites votes WHERE posts.post_id=votes.post_id AND votes.user_id='".$media['user_id']."' AND posts.post_status='1' ORDER BY posts.post_id ASC LIMIT ".$limit.""), $content, "favorites");
 					}
 				$GOLD_html .= $this->output('</div>');
 			}
@@ -1614,8 +1652,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 	}
 
   public function GOLD_box($q, $content, $GET, $statement) {
-	$GOLD_html .= $this->output('<div id="feed" class="wrap cf">'); 
-		
+	$GOLD_html .= $this->output('<div id="feed" class="wrap cf">');
 	if($GET != 'wall') {
 		$GOLD_html .= $this->output('<style>.full_wrap{width:100%; } #loading-indicator { width: 590px; }</style>');
 		$GOLD_html .= $this->output('<div class="full_wrap cf"><div style="float: left; width: 100%;">');
@@ -1685,7 +1722,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 
 		$GOLD_html .= $this->output('
 	        <div class="movie-element movie-element-size-1" data-id="9452">
-	        	<a href="'.$this->GOLD_ROOT().$GOLD_CATEGORY['name'].'/'.$media['post_name'].'" class="movie-image" style="background-image: url('.$post_type.');">
+	        	<a href="'.$this->GOLD_ROOT().$GOLD_CATEGORY['name'].'/'.$media['post_name']. '" class="movie-image" style="background-color:#7d506f;background-image: url(' .$post_type.');">
 	        		<div class="movie-overlay clearfix"><div class="movie-overlay-title">'.$media['post_title'].'</div></div>
 	        	</a>
 	        </div>
@@ -1739,11 +1776,7 @@ $blocks_sql = mysql_query("SELECT * FROM gold_blocks WHERE block_type='post' AND
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('language_title').':</div><div class="movie_desc_content"><a>'.$media['language'].'</a></div></div>
 							<div class="movie_desc_row"><div class="movie_desc_title">'.$this->LANG('producer_title').':</div><div class="movie_desc_content">'.$rejisorebi.'</div></div>
 							<div class="movie_desc_row" style="line-height: 15px; padding-top: 3px; padding-bottom: 8px; border-bottom: 1px solid rgb(202, 202, 202); border-bottom-style: dotted;"><div class="movie_desc_title">'.$this->LANG('actors_title').':</div> <font style="float: none; font-family: Arial; font-size: 10px; font-weight: bold; color: #000; position: relative; top: -1px;">'.$casts.'</font></div>
-							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 70px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
-							<div style="position: absolute; bottom: 5px; display: inline-block; width: 350px;">
-								<div class="imdb-badge arrow" style="float: left;"><span>'.$media['imdb'].'</span></div>
-								<a href="'.$this->GOLD_ROOT().$GOLD_CATEGORY['name'].'/'.$media['post_name'].'" id="srulad_naxva" href="" style="float: right;">'.$this->LANG('show_details').'</a>
-							</div>
+							<div class="movie_desc_row" style="line-height: 15px; padding-top: 7px; max-height: 100px; display: inline-block; max-height: 150px; overflow: hidden;"><div class="movie_desc_title" style="text-decoration: underline; font-weight: bold; color: rgb(173, 34, 34); font-size: 11px;">'.$this->LANG('description_title').':</div> <font style="float: none; position: relative; top: -1px; font-family: Arial; font-size: 11px; color: rgb(88, 88, 88);">'.$media['post_content'].'</font></div>
 						</div>
 					</div>
 				</div>
@@ -2814,7 +2847,7 @@ border-radius: 0;
 				</li>
 			</ul>
 			
-			<span class="powered_by">2015 © Powered by <a target="_blank" style="color: rgb(234, 255, 0);">Gold MOVIES</a>
+			<span class="powered_by">2017 © Powered by <a target="_blank" style="color: rgb(234, 255, 0);">Stream Paradise</a>
 			
 			
 			</span>

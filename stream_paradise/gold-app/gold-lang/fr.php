@@ -1,0 +1,180 @@
+<?php 
+
+	/*
+	|--------------------------------------------------------------------------
+	| English Language File for Gold MOVIES
+	|--------------------------------------------------------------------------
+	*/
+	
+	$LANG['movie_genres'] = "MOVIE GENRES";
+	$LANG['random_movies'] = "RANDOM MOVIES";
+	$LANG['advert'] = "ADVERT";
+	$LANG['interesting_movies'] = "INTERESTING MOVIES";
+	$LANG['facebook_box'] = "LIKE US ON FACEBOOK";
+	$LANG['twitter_box'] = "LIKE US ON TWITTER";
+	$LANG['year_title'] = "Year";
+	$LANG['genre_title'] = "Genre";
+	$LANG['choose_movies_genre'] = "Catégories de films";
+	$LANG['filter_by'] = "Trier par";
+	$LANG['language_title'] = "Language";
+	$LANG['producer_title'] = "Producer";
+	$LANG['actors_title'] = "Actors";
+	$LANG['description_title'] = "Description";
+	$LANG['show_details'] = "Show Details";
+	$LANG['pages'] = "PAGES";
+	$LANG['feedback'] = "Feedback";
+	$LANG['most_votes'] = "Most Votes";
+	$LANG['most_comments'] = "Most Comments";
+	$LANG['most_views'] = "Most Views";
+	$LANG['login'] = "Login";
+	$LANG['register'] = "Registration";
+	$LANG['email'] = "Email";
+	$LANG['username'] = "Username";
+	$LANG['password'] = "Password";
+	$LANG['remember_me'] = "Remember me";
+	$LANG['menu'] = "MENU";
+	$LANG['sidebar_genres'] = "MENU";
+	$LANG['sidebar_pages'] = "Pages";
+	$LANG['sidebar_popular_movies'] = "Popular Movies";
+	$LANG['sidebar_feedback'] = "Feedback";
+	$LANG['sidebar_close'] = "Close";
+	$LANG['forgot_your_password'] = "Forgot Password ?";
+	$LANG['media_will_be_checked'] = "Media will be checked and approved shortly.";
+	$LANG['confirm_the_email_adress'] = "To use your account, you need to confirm the email address. Visit the E-Mail Inbox.";
+	$LANG['emailed_your_reset_password'] = "You have been Emailed Your Reset Password. Please check Inbox.";
+	$LANG['points'] = "points";
+	$LANG['admin'] = "Admin";
+	$LANG['my_account'] = "My account";
+	$LANG['my_favorites'] = "My Favorites";
+	$LANG['logout'] = "Logout";
+	$LANG['upload_image'] = "Upload Image";
+	$LANG['upload_video'] = "Upload Video";
+	$LANG['search'] = "Search";
+	$LANG['categories'] = "Categories";
+	$LANG['email_or_username'] = "Email or Username";
+	$LANG['please_write_username'] = "Please write username";
+	$LANG['please_write_email'] = "Please write email";
+	$LANG['please_write_password'] = "Please write password";
+	$LANG['sorry_username_already_taken'] = "Username already taken";
+	$LANG['sorry_email_already_taken'] = "Email already taken";
+	$LANG['please_write_username_or_email'] = "Please write Email or Username";
+	$LANG['sorry_that_user_not_found'] = "User not found";
+	$LANG['send_reset_password'] = "Reset Password";
+	$LANG['views'] = "Vues";
+	$LANG['shares'] = "Shares";
+	$LANG['comments'] = "Comments";
+	$LANG['level'] = "LEVEL";
+	$LANG['related_media'] = "Related Media";
+	$LANG['no_related_media'] = "No Related Media Found";
+	$LANG['top_media'] = "Watch Popular Movies";
+	$LANG['no_top_media'] = "No TOP MEDIA Found";
+	$LANG['top_user_big'] = "TOP USERS";
+	$LANG['no_top_users'] = "No Top Users Found";
+	$LANG['newest_users_big'] = "NEWEST USERS";
+	$LANG['no_newest_users'] = "No Newest Users Found";
+	$LANG['popular_tags_big'] = "POPULAR TAGS";
+	$LANG['no_popular_tags'] = "No Popular Tags Found";
+	$LANG['recent_tags_big'] = "RECENT TAGS";
+	$LANG['no_recent_tags'] = "No Recent Tags Found";
+	$LANG['edit_details'] = "Edit Details";
+	$LANG['information'] = "Information";
+	$LANG['history'] = "History";
+	$LANG['favorites'] = "Favorites";
+	$LANG['watchlater'] = "Watch Later";
+	$LANG['member_registered'] = "Member Registered";
+	$LANG['user_group'] = "User Group";
+	$LANG['fullname'] = "Fullname";
+	$LANG['location'] = "Location";
+	$LANG['website'] = "Website";
+	$LANG['about'] = "About";
+	$LANG['statistics_of'] = "Statistics of";
+	$LANG['score'] = "Score";
+	$LANG['user_title'] = "User Title";
+	$LANG['uploaded_media'] = "Uploaded Media";
+	$LANG['comments_replies'] = "Comments Replies";
+	$LANG['voted_on_media'] = "Voted on Media";
+	$LANG['voted_on_comments'] = "Voted on Comments";
+	$LANG['received_votes'] = "Received Votes";
+	$LANG['already_taken'] = "Already Taken";
+	$LANG['upload_avatar'] = "Upload Avatar";
+	$LANG['upload_cover'] = "Upload Cover";
+	$LANG['save_changes'] = "Save Changes";
+	$LANG['change_password'] = "Change Password";
+	$LANG['no_results'] = "Movies Not Found";
+	$LANG['if_you_want_to_post_comment'] = "If you want to post comment, please login or register";
+	$LANG['all_comments'] = "ALL COMMENTS";
+	$LANG['please_fill_the_complete_details'] = "Please fill the complete details OR login into your account";
+	$LANG['characters'] = "Characters";
+	$LANG['add_comment'] = "Add Comment";
+	$LANG['be_the_first_to_comment'] = "Be the first to comment";
+	$LANG['you_must_sign_in_to_up_vote'] = "You must sign in to up-vote this post";
+	$LANG['you_must_sign_in_to_down_vote'] = "You must sign in to down-vote this post";
+	$LANG['reply'] = "Reply";
+	$LANG['flag'] = "Flag";
+	$LANG['please_write_title'] = "Please write title";
+	$LANG['please_write_category'] = "Please write category";
+	$LANG['add_image'] = "Add Movie";
+	$LANG['title'] = "Title";
+	$LANG['filter'] = "Filter";
+	$LANG['rating'] = "Rating";
+	$LANG['required'] = "required";
+	$LANG['description'] = "Description";
+	$LANG['category'] = "Category";
+	$LANG['choose_category'] = "Choose Category";
+	$LANG['upload'] = "Upload";
+	$LANG['or'] = "or";
+	$LANG['paste_img_url'] = "Paste Image URL";
+	$LANG['tags_combine_words'] = "Tags - Use comma to combine words";
+	$LANG['add_video'] = "Add Video";
+	$LANG['paste_video_url'] = "Paste Video URL";
+	
+	/*
+	|--------------------------------------------------------------------------
+	| Admin-Panel English Language File for Gold MOVIES
+	|--------------------------------------------------------------------------
+	*/
+	
+	$LANG['approve'] = "Approve";
+	$LANG['reject'] = "Reject";
+	$LANG['admin_home'] = "Home";
+	$LANG['admin_users'] = "Users";
+	$LANG['admin_layout'] = "Layout";
+	$LANG['admin_image'] = "Image";
+	$LANG['admin_title'] = "Title";
+	$LANG['admin_options'] = "Options";
+	$LANG['admin_categories'] = "Categories";
+	$LANG['admin_menu'] = "Menu";
+	$LANG['admin_points'] = "Points";
+	$LANG['admin_levels'] = "Levels";
+	$LANG['admin_mailing'] = "Mailing";
+	$LANG['admin_moderate_media'] = "Moderate Media";
+	$LANG['admin_flagged'] = "Flagged";
+	$LANG['admin_plugins'] = "Plugins";
+	$LANG['admin_settings'] = "Settings";
+	$LANG['admin_today_media'] = "Today Media";
+	$LANG['admin_today_users'] = "Today Users";
+	$LANG['admin_all_users'] = "All Users";
+	$LANG['admin_all_media'] = "All Media";
+	$LANG['admin_plugin_title'] = "Plugin Title";
+	$LANG['admin_options'] = "Options";
+	$LANG['admin_registered_date'] = "Registered Date";
+	$LANG['admin_last_logged_in'] = "Last Logged In";
+	$LANG['please_fill_out_important_fields'] = "Please fill out important fields";
+	$LANG['admin_level_id'] = "Level ID";
+	$LANG['admin_level_points'] = "Level Points";
+	$LANG['admin_levels'] = "Levels";
+	$LANG['admin_add_level'] = "Add Level";
+	$LANG['admin_flag_type'] = "Flag Type";
+	$LANG['admin_content'] = "Content";
+	$LANG['admin_user_ip'] = "User IP";
+	$LANG['admin_add_category'] = "Add Category";
+	$LANG['back_to_admin'] = "Back to Admin";
+	$LANG['movie_title'] = "Movie Title";
+	$LANG['movie_year'] = "Année";
+    $LANG['release_date'] = "Date de sortie";
+	$LANG['imdb_rating'] = "IMDb Rating";
+	$LANG['fetch_movie'] = "Fetch Movie";
+	$LANG['movie_description'] = "Movie Description";
+	$LANG['upload_movie_cover'] = "Upload Movie Cover";
+	
+	

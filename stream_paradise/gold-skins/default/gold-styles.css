@@ -75,7 +75,7 @@ select:hover, select:focus {
 	width:100%;
 	height:50px;
 	z-index:200;
-	background:#EC3A39;
+	background: #7d5772;
 	-webkit-transition:top 0.13s ease-in-out;
 	transition:top 0.13s ease-in-out;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -147,7 +147,7 @@ select:hover, select:focus {
 	width: 86px;
 	padding: 0 29px;
 	margin: 9px 0 0;
-	background: #C50E0E;
+	background: #7d5772;
 	border: 1px solid rgba(255, 0, 0, 0.69);
 	border-radius: 0px;
 	border-style: dotted;
@@ -704,7 +704,7 @@ span#add-seperator {
 	font-family: Arial;
 }
 #select-genre .select-genre-title a {
-	background: #EC3A39;
+	background: #7d5772;
 	border-radius: 3px;
 	border-bottom: 1px solid #b2b2b2;
 	display: block;
@@ -844,7 +844,7 @@ div.imdb-sort a:hover, div.imdb-sort a.active {
 	-webkit-transition: all .2s ease-in-out;
 }
 .select-genre-categories-inner ul li a:hover {
-	background: #EC3A39;
+	background: #7d506f;
 	color: #fff;
 }
 .movie-image:hover .movie-overlay-title {
@@ -856,7 +856,7 @@ div.imdb-sort a:hover, div.imdb-sort a.active {
 	width: 198px;
 	padding: 5px 10px;
 	font-size: 11px;
-	background: rgba(236, 58, 57, 0.75);
+	background: rgba(125, 80, 111, 0.75);
 	color: #fff;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
@@ -896,7 +896,7 @@ div.imdb-sort a:hover, div.imdb-sort a.active {
 	cursor: pointer;
 }
 .post_preview {
-	background: #565558 url('images/aside.png');
+	/*background: #565558 url('images/aside.png');*/
 	width: 100%;
 	height: 100%;
 	padding: 0px 0px;
@@ -921,9 +921,7 @@ div#left-wrapper {
 	top: -150px;
 	z-index: 1;
 	width: 25.9%;
-	-webkit-box-shadow: inset 156px 7px 232px 51px rgba(0,0,0,1);
-	-moz-box-shadow: inset 156px 7px 232px 51px rgba(0,0,0,1);
-	box-shadow: inset 156px 7px 232px 51px rgba(0,0,0,1);
+
 }
 div#right-wrapper {
 	height: 762px;
@@ -1396,14 +1394,14 @@ li:hover .dropdown {
 	height: 30px;
 	padding: 0px 38px 0px 12px;
 	color: rgb(255, 255, 255);
-	border: 1px solid rgb(194, 11, 11);
+	border: 1px solid rgb(107, 79, 100);
 	border-radius: 5px;
-	background: #C50E0E;
+	background: #7d5772;
 	-webkit-transition: background-color 0.5s ease-in-out;
 	transition: background-color 0.1s ease-in-out;
 }
 .search input[type=text]:hover {
-	background-color: #9B0E0E;
+	background-color: #6b4f64;
 	color: white;
 }
 .search input[type=image] {
@@ -2492,7 +2490,7 @@ overflow: hidden;
 text-align: center;
 font-size: 13px;
 color: #FFFFFF;
-background: #E71919;
+background: #7d5772;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
 }
@@ -4078,7 +4076,7 @@ ul.categories li a {
 	text-decoration: none;
 }
 ul.categories li a:hover {
-	color: rgb(255, 0, 0);
+	color: rgb(107, 79, 100);
 }
 .movie_description {
 	cursor: pointer;
@@ -4192,7 +4190,7 @@ div.imdb-badge span {
 	display: inline-block;
 }
 .soon-title {
-	background: rgb(209, 30, 30);
+	background: rgb(125, 87, 114);
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, 0.31);
 	width: 250px;

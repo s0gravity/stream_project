@@ -1,0 +1,1159 @@
+ROW_ID;SERIE_ID;SERIE_TITLE;SERIE_ROW_ID;NAME
+1;7003;Madame Columbo (Kate the Detective);2;Saison 1
+2;7003;Madame Columbo (Kate the Detective);2;Saison 2
+3;7002;Search Party;3;Saison 1
+4;7001;Sunny D;4;Saison 1
+5;7000;Mars;5;Saison 1
+6;6999;Incorporated;6;Saison 1
+7;6998;Nightcap;7;Saison 1
+8;6997;Good Behavior;8;Saison 1
+9;6996;Shooter;9;Saison 1
+10;6995;Sweet/Vicious;10;Saison 1
+11;6994;Crime et châtiment (2016);11;Saison 1
+12;6993;La Main du mal;12;Saison 1
+13;6992;Close to the Enemy;13;Saison 1
+14;6991;American Experience;14;Saison 24
+15;6991;American Experience;14;Saison 25
+16;6991;American Experience;14;Saison 27
+17;6990;Mariés au premier regard;15;Saison 1
+18;6989;Hindenburg, l'ultime odyssée - Hindenburg, le géant des airs;16;Saison 1
+19;6988;Frontier;17;Saison 1
+20;6987;Dirk Gently's Holistic Detective Agency (2016);18;Saison 1
+21;6986;Miraculous, les aventures de Ladybug et Chat Noir;19;Saison 1
+22;6985;The Crown;20;Saison 1
+23;6984;DiCaire Show;21;Saison 1
+24;6983;Stan Against Evil;22;Saison 1
+25;6982;The Moonstone;23;Saison 1
+26;6981;People of Earth;24;Saison 1
+27;6980;Dark Angel (2016);25;Saison 1
+28;6979;Talma et le mythe d’Agartha;26;Saison 1
+29;6978;Dream Corp LLC;27;Saison 1
+30;6977;Le Mystère Enfield;28;Saison 1
+31;6976;Good Girls Revolt;29;Saison 1
+32;6975;Pure Genius;30;Saison 1
+33;6974;The Great Indoors;31;Saison 1
+34;6973;Médicis : les Maîtres de Florence;32;Saison 1
+35;6972;Une ambition intime;33;Saison 1
+36;6971;Travelers;34;Saison 1
+37;6970;Man With a Plan;35;Saison 1
+38;6969;Goliath;36;Saison 1
+39;6968;Class;37;Saison 1
+40;6967;The Young Pope;38;Saison 1
+41;6966;Robinson Crusoë (2003);39;Saison 1
+42;6965;Zapped!;40;Saison 1
+43;6964;Dimanche 20h55;41;Saison 1
+44;6963;Chance (2016);42;Saison 1
+45;6962;Crazyhead;43;Saison 1
+46;6961;Dirty Laundry;44;Saison 1
+47;6960;Him;45;Saison 1
+48;6959;Le Meilleur pâtissier Spécial Célébrités;46;Saison 1
+49;6958;Shoot the Messenger;47;Saison 1
+50;6957;Tutankhamun;48;Saison 1
+51;6956;Graves;49;Saison 1
+52;6955;Eyewitness;50;Saison 1
+53;6954;Sur la trace des Aliens;51;Saison 1
+54;6953;Kim's Convenience;52;Saison 1
+55;6952;Haters Back Off;53;Saison 1
+56;6951;Rosehaven;54;Saison 1
+57;6950;Channel Zero;55;Saison 1
+58;6949;American Housewife;56;Saison 1
+59;6948;Motherland;57;Saison 1
+60;6947;Freakish;58;Saison 1
+61;6946;Insecure;59;Saison 1
+62;6945;Divorce;60;Saison 1
+63;6944;The Level;61;Saison 1
+64;6943;Stupéfiant !;62;Saison 1
+65;6942;Deep Water;63;Saison 1
+66;6941;Frequency;64;Saison 1
+67;6940;No Tomorrow;65;Saison 1
+68;6939;Hyde and Seek;66;Saison 1
+69;6938;Conviction;67;Saison 1
+70;6937;Too Close to Home;68;Saison 1
+71;6936;Timeless;69;Saison 1
+72;6935;The Secret Daughter;70;Saison 1
+73;6934;Westworld;71;Saison 1
+74;6933;Berlin Station;72;Saison 1
+75;6932;The Wrong Girl;73;Saison 1
+76;6931;Hors-la-loi : confession d’un Hells Angel;74;Saison 1
+77;6930;Damned;75;Saison 1
+78;6929;Aftermath;76;Saison 1
+79;6928;Falling Water;77;Saison 1
+80;6927;Marvel's Luke Cage;78;Saison 1
+81;6926;L'émission politique;79;Saison 1
+82;6925;Capitaine Marleau;80;Saison 1
+83;6924;L'Exorciste;81;Saison 1
+84;6923;MacGyver (2016);82;Saison 1
+85;6922;Pitch;83;Saison 1
+86;6921;Notorious;84;Saison 1
+87;6920;Paranoid;85;Saison 1
+88;6919;Easy;86;Saison 1
+89;6918;Designated Survivor;87;Saison 1
+90;6917;L'Arme fatale;88;Saison 1
+91;6916;This Is Us;89;Saison 1
+92;6915;Bull;90;Saison 1
+93;6914;National Treasure;91;Saison 1
+94;6913;The Good Place;92;Saison 1
+95;6912;Kevin Can Wait;93;Saison 1
+96;6911;Harley and the Davidsons;94;Saison 1
+97;6910;Complexes d'ados (Bloot);95;Saison 1
+98;6909;Hooten & the Lady;96;Saison 1
+99;6908;High Maintenance;97;Saison 1
+100;6907;Doctor Doctor;98;Saison 1
+101;6906;Legends of Chamberlain Heights;99;Saison 1
+102;6905;One Mississippi;100;Saison 1
+103;6904;Son Of Zorn;101;Saison 1
+104;6903;L'incroyable histoire de la téléréalité;102;Saison 1
+105;6902;Quarry;103;Saison 1
+106;6901;Speechless;104;Saison 1
+107;6900;Better Things;105;Saison 1
+108;6899;A.I.SHA: My Virtual Girlfriend;106;Saison 1
+109;6898;StartUp;107;Saison 1
+110;6897;Queen Sugar;108;Saison 1
+111;6896;Atlanta;109;Saison 1
+112;6895;Last Chance U;110;Saison 1
+113;6894;Mary + Jane;111;Saison 1
+114;6893;Loosely Exactly Nicole;112;Saison 1
+115;6892;Case Sensitive;113;Saison 1
+116;6892;Case Sensitive;113;Saison 2
+117;6891;La Trêve (2016);114;Saison 1
+118;6890;La Vengeance aux yeux clairs;115;Saison 1
+119;6889;The Collection;116;Saison 1
+120;6888;Prémonitions;117;Saison 1
+121;6887;Victoria;118;Saison 1
+122;6886;Jean-Claude Van Johnson;119;Saison 1
+123;6885;The Tick;120;Saison 1
+124;6884;Private eyes;121;Saison 1
+125;6883;One of Us;122;Saison 1
+126;6882;Les Chroniques de Matt Hatter;123;Saison 1
+127;6882;Les Chroniques de Matt Hatter;123;Saison 2
+128;6882;Les Chroniques de Matt Hatter;123;Saison 3
+129;6881;Chesapeake Shores;124;Saison 1
+130;6880;The Get Down;125;Saison 1
+131;6879;Van Helsing;126;Saison 1
+132;6878;Still the King;127;Saison 1
+133;6877;Degrassi: Next Class;128;Saison 1
+134;6877;Degrassi: Next Class;128;Saison 2
+135;6876;Fleabag;129;Saison 1
+136;6875;Ninja Warrior : Le Parcours des héros;130;Saison 1
+137;6874;Wasted;131;Saison 1
+138;6873;The Kettering Incident;132;Saison 1
+139;6872;Difficult People;133;Saison 1
+140;6872;Difficult People;133;Saison 2
+141;6871;The American West;134;Saison 1
+142;6870;The Secret Agent;135;Saison 1
+143;6869;Vice Principals;136;Saison 1
+144;6868;Stranger Things;137;Saison 1
+145;6867;Brief Encounters;138;Saison 1
+146;6867;Brief Encounters;138;Saison 4
+147;6866;Les Héritiers (2014);139;Saison 1
+148;6865;Ride with Norman Reedus;140;Saison 1
+149;6864;Origines;141;Saison 1
+150;6864;Origines;141;Saison 2
+151;6863;The Night Of;142;Saison 1
+152;6862;Dead of Summer;143;Saison 1
+153;6861;The Living and the Dead;144;Saison 1
+154;6860;Lego Star Wars: The Freemaker Adventures;145;Saison 1
+155;6858;Heartless, la malédiction;146;Saison 1
+156;6857;Queen of the South;147;Saison 1
+157;6856;American Gothic (2016);148;Saison 1
+158;6855;Greenleaf;149;Saison 1
+159;6854;Navarro;150;Saison 5
+160;6854;Navarro;150;Saison 6
+161;6854;Navarro;150;Saison 7
+162;6854;Navarro;150;Saison 8
+163;6854;Navarro;150;Saison 16
+164;6854;Navarro;150;Saison 17
+165;6854;Navarro;150;Saison 18
+166;6854;Navarro;150;Saison 19
+167;6853;The Secret (2016);151;Saison 1
+168;6852;Vis A vis;152;Saison 1
+169;6851;Chewing Gum;153;Saison 1
+170;6849;Roadies;155;Saison 1
+171;6848;Wrecked;156;Saison 1
+172;6847;Uncle Buck;157;Saison 1
+173;6846;Guilt;158;Saison 1
+174;6845;BrainDead;159;Saison 1
+175;6844;Feed the Beast;160;Saison 1
+176;6843;Roots (2016);161;Saison 1
+177;6842;H2O, l'île aux sirènes;162;Saison 1
+178;6841;Cleverman;163;Saison 1
+179;6840;Tomorrow When the War Began;164;Saison 1
+180;6839;Love, Nina;165;Saison 1
+181;6838;Preacher;166;Saison 1
+182;6837;Scott & Bailey;167;Saison 1
+183;6837;Scott & Bailey;167;Saison 2
+184;6837;Scott & Bailey;167;Saison 3
+185;6837;Scott & Bailey;167;Saison 4
+186;6836;Lady Dynamite;168;Saison 1
+187;6835;Outcast;169;Saison 1
+188;6834;Wolf Creek;170;Saison 1
+189;6833;Coupe d'Europe de Football;171;Saison 11
+190;6833;Coupe d'Europe de Football;171;Saison 14
+191;6833;Coupe d'Europe de Football;171;Saison 15
+192;6832;I Want My Wife Back;172;Saison 1
+193;6831;Submission;173;Saison 1
+194;6830;Camille Combal dans la rue;174;Saison 1
+195;6829;Jordskott, la forêt des disparus;175;Saison 1
+196;6828;Acquitted;176;Saison 1
+197;6827;Con Man;177;Saison 1
+198;6826;Marseille;178;Saison 1
+199;6825;Flowers;179;Saison 1
+200;6824;De mères en filles;180;Saison 1
+201;6823;Seuls à la maison;181;Saison 1
+202;6822;Animal Kingdom;182;Saison 1
+203;6821;L'Hebdo Show avec Arthur;183;Saison 1
+204;6820;The Five;184;Saison 1
+205;6819;Burkland;185;Saison 1
+206;6817;Marcella;187;Saison 1
+207;6816;Time Traveling Bong;188;Saison 1
+208;6815;Containment;189;Saison 1
+209;6814;The Detour;190;Saison 1
+210;6813;Mammon;191;Saison 1
+211;6813;Mammon;191;Saison 2
+212;6812;Kong: King of the Apes;192;Saison 1
+213;6811;Game of Silence;193;Saison 1
+214;6811;Game of Silence;193;Saison 6
+215;6810;Hunters;194;Saison 1
+216;6809;The Durrells;195;Saison 1
+217;6808;Superkids;196;Saison 1
+218;6806;Girlfriend Experience;197;Saison 1
+219;6805;Molly, une femme au combat;198;Saison 1
+220;6805;Molly, une femme au combat;198;Saison 2
+221;6804;Action ou vérité;199;Saison 1
+222;6803;Face au crime (2016);200;Saison 1
+223;6802;Rush Hour;201;Saison 1
+224;6800;Resident Advisors;202;Saison 1
+225;6799;The A Word;203;Saison 1
+226;6798;Wynonna Earp;204;Saison 1
+227;6797;Section Zéro;205;Saison 1
+228;6796;The Path;206;Saison 1
+229;6795;The Ranch;207;Saison 1
+230;6794;Tandem (2016);208;Saison 1
+231;6792;Heartbeat;210;Saison 1
+232;6791;Sam (2016);211;Saison 1
+233;6790;Bridget & Eamon;212;Saison 1
+234;6784;La Grande Vallée;217;Saison 1
+235;6779;Bob Morane (1965);222;Saison 1
+236;6778;The Catch (2016);223;Saison 1
+237;6777;Houdini & Doyle;224;Saison 1
+238;6776;Murder (2016);225;Saison 1
+239;6775;Lebowitz contre Lebowitz;226;Saison 1
+240;6773;Chasseurs d'Ovnis (Chasing UFOs);228;Saison 1
+241;6772;Criminal Minds : Beyond Borders;229;Saison 1
+242;6771;Underground;230;Saison 1
+243;6770;Teen Titans Go!;231;Saison 1
+244;6770;Teen Titans Go!;231;Saison 2
+245;6769;Slasher;232;Saison 1
+246;6768;Horace and Pete;233;Saison 1
+247;6767;The Aliens;234;Saison 1
+248;6766;Flaked;235;Saison 1
+249;6765;Aventures dans le monde perdu de Sir Conan Doyle;236;Saison 1
+250;6764;Of Kings and Prophets;237;Saison 1
+251;6763;Dossiers Criminels;238;Saison 1
+252;6762;Damien;239;Saison 1
+253;6761;The Real O'Neals;240;Saison 1
+254;6761;The Real O'Neals;240;Saison 2
+255;6760;The Family;241;Saison 1
+256;6759;Hap and Leonard;242;Saison 1
+257;6758;Wanted (2016);243;Saison 1
+258;6757;Vétérinaires, leur vie en direct;244;Saison 1
+259;6756;La Fête de la Chanson française;245;Saison 1
+260;6755;Camille réveille Marseille;246;Saison 1
+261;6754;Cérémonie des César du Cinéma français;247;Saison 1
+262;6753;Une Saison chez les Bonobos;248;Saison 1
+263;6752;Dark Net;249;Saison 1
+264;6751;Une autre histoire de l'Amérique;250;Saison 1
+265;6750;Mini Wakfu;251;Saison 1
+266;6749;No Offence;252;Saison 1
+267;6748;Thirteen;253;Saison 1
+268;6746;Gaycation;254;Saison 1
+269;6745;Ovnis : Dossiers révélés (UFOs Declassified);255;Saison 1
+270;6744;Mallory;256;Saison 1
+271;6743;La Fête à la maison : 20 ans après;257;Saison 1
+272;6742;La Brigade (2016);258;Saison 1
+273;6741;Being Mary Jane;259;Saison 1
+274;6741;Being Mary Jane;259;Saison 2
+275;6741;Being Mary Jane;259;Saison 3
+276;6740;The Night Manager;260;Saison 1
+277;6739;Madoff;261;Saison 1
+278;6738;Rekkit;262;Saison 1
+279;6738;Rekkit;262;Saison 2
+280;6737;Team Galaxy, le collège de l'éspace;263;Saison 1
+281;6737;Team Galaxy, le collège de l'éspace;263;Saison 2
+282;6736;Garde à vous : Retour au service militaire;264;Saison 1
+283;6735;Love (2016);265;Saison 1
+284;6733;La Forêt de l'Étrange (Over The Garden Wall);267;Saison 1
+285;6732;Pop Show;268;Saison 1
+286;6731;Vinyl;269;Saison 1
+287;6730;11.22.63;270;Saison 1
+288;6729;Les Belles Histoires des pays d'en haut;271;Saison 1
+289;6729;Les Belles Histoires des pays d'en haut;271;Saison 2
+290;6729;Les Belles Histoires des pays d'en haut;271;Saison 3
+291;6729;Les Belles Histoires des pays d'en haut;271;Saison 4
+292;6728;Despot Housewives;272;Saison 1
+293;6727;Le Bal des Célibataires;273;Saison 1
+294;6726;Lanester;274;Saison 1
+295;6725;On a tous en nous quelque chose...;275;Saison 1
+296;6724;Le Secret d'Elise;276;Saison 1
+297;6723;Pompidou;277;Saison 1
+298;6722;Les invisibles;278;Saison 1
+299;6721;Animals;279;Saison 1
+300;6720;El Ministerio del Tiempo;280;Saison 1
+301;6720;El Ministerio del Tiempo;280;Saison 2
+302;6719;Trapped;281;Saison 1
+303;6718;Baron Noir;282;Saison 1
+304;6717;Lyp Sync Battle;283;Saison 2
+305;6716;Yukon Gold : L'or à tout prix;284;Saison 1
+306;6716;Yukon Gold : L'or à tout prix;284;Saison 2
+307;6715;Trepalium;285;Saison 1
+308;6714;Black Work;286;Saison 1
+309;6712;American Crime Story;288;Saison 1
+310;6711;Lucky Man;289;Saison 1
+311;6710;Mercy Street;290;Saison 1
+312;6709;Outsiders;291;Saison 1
+313;6708;Crypte Show (Tales from the Cryptkeeper);292;Saison 1
+314;6708;Crypte Show (Tales from the Cryptkeeper);292;Saison 2
+315;6707;Zoe Ever After;293;Saison 1
+316;6706;En pleine nature;294;Saison 2
+317;6705;Rocambole;295;Saison 1
+318;6705;Rocambole;295;Saison 2
+319;6705;Rocambole;295;Saison 3
+320;6696;Les Vacances de Poly;301;Saison 1
+321;6692;Au coeur de l'hiver (Raja);305;Saison 1
+322;6691;Baskets;306;Saison 1
+323;6690;DC's Legends of Tomorrow;307;Saison 1
+324;6690;DC's Legends of Tomorrow;307;Saison 2
+325;6688;La Stagiaire;308;Saison 1
+326;6687;Teachers;309;Saison 1
+327;6686;Angie Tribeca;310;Saison 1
+328;6686;Angie Tribeca;310;Saison 2
+329;6685;La Tempête du siècle (Storm of the Century);311;Saison 1
+330;6684;Le Messager (2016);312;Saison 1
+331;6683;Cellule de crise;313;Saison 1
+332;6682;Anomalia;314;Saison 1
+333;6681;Puppets ! Le grand show des marionnettes;315;Saison 1
+334;6680;Hell's Kitchen (FR) - Les cuisines de l'enfer;316;Saison 1
+335;6679;Meurtre au pied du volcan (Hraunið);317;Saison 1
+336;6678;Shades of Blue;318;Saison 1
+337;6677;Idiotsitter;319;Saison 1
+338;6677;Idiotsitter;319;Saison 2
+339;6676;Jericho (UK) 2016;320;Saison 1
+340;6675;Shadowhunters;321;Saison 1
+341;6674;Crashing;322;Saison 1
+342;6673;Ze Fiesta !;323;Saison 1
+343;6673;Ze Fiesta !;323;Saison 2
+344;6672;Neon Joe, Werewolf Hunter;324;Saison 1
+345;6671;Le temps d'une paix;325;Saison 1
+346;6671;Le temps d'une paix;325;Saison 2
+347;6671;Le temps d'une paix;325;Saison 3
+348;6671;Le temps d'une paix;325;Saison 4
+349;6671;Le temps d'une paix;325;Saison 5
+350;6671;Le temps d'une paix;325;Saison 6
+351;6670;Angel From Hell;326;Saison 1
+352;6669;Rebellion;327;Saison 1
+353;6668;False Flag;328;Saison 1
+354;6667;Recovery Road;329;Saison 1
+355;6666;Les Chroniques de Shannara;330;Saison 1
+356;6665;War & Peace (War and Peace);331;Saison 1
+357;6664;Billions;332;Saison 1
+358;6661;Doll & Em (Doll et Em);335;Saison 1
+359;6661;Doll & Em (Doll et Em);335;Saison 2
+360;6660;Madame Lebrun;336;Saison 1
+361;6660;Madame Lebrun;336;Saison 2
+362;6659;Instinct;337;Saison 1
+363;6658;Scarlett;338;Saison 1
+364;6657;Modus;339;Saison 1
+365;6656;Unforgotten;340;Saison 1
+366;6655;Premier contact;341;Saison 1
+367;6655;Premier contact;341;Saison 2
+368;6655;Premier contact;341;Saison 3
+369;6654;Sam et Sally;342;Saison 1
+370;6654;Sam et Sally;342;Saison 2
+371;6653;And Then There Were None;343;Saison 1
+372;6652;Toutânkhamon : le pharaon maudit (Tut);344;Saison 1
+373;6651;Mes Chers Disparus;345;Saison 1
+374;6650;Beowulf : Return to the Shieldlands;346;Saison 1
+375;6649;Making a Murderer;347;Saison 1
+376;6648;Second Chance;348;Saison 1
+377;6647;Colony;349;Saison 1
+378;6646;Super Million Question;350;Saison 1
+379;6645;Cooper Barrett's Guide To Surviving Life;351;Saison 1
+380;6644;Les Aventuriers de l'art moderne;352;Saison 1
+381;6643;Milat : traque d'un serial killer;353;Saison 1
+382;6642;The Frankenstein Chronicles;354;Saison 1
+383;6641;Childhoods End;355;Saison 1
+384;6639;The Magicians;357;Saison 1
+385;6638;C'est devenu culte !;358;Saison 1
+386;6637;Les Chroniques de Zorro (Zorro: The Chronicles);359;Saison 1
+387;6636;Le Tour du Bagel;360;Saison 1
+388;6635;Devil's Playground;361;Saison 1
+389;6634;Fauteuils d'orchestre;362;Saison 1
+390;6633;Les Z'Awards de la télé;363;Saison 1
+391;6632;Marguerite Volant;364;Saison 1
+392;6631;Tripped;365;Saison 1
+393;6630;Graines d'étoiles;366;Saison 1
+394;6629;David Copperfield (1999);367;Saison 1
+395;6628;The Fixer : Catastrophes programmées;368;Saison 1
+396;6627;Telenovela;369;Saison 1
+397;6626;Le Fils du Dragon;370;Saison 1
+398;6625;Les Allumettes suédoises;371;Saison 1
+399;6624;The Heavy Water War (The Saboteurs);372;Saison 1
+400;6623;Les Duettistes;373;Saison 1
+401;6622;First Kiss (2015);374;Saison 1
+402;6621;Cassandre;375;Saison 1
+403;6620;La vie secrète des chansons;376;Saison 1
+404;6619;South of Hell;377;Saison 1
+405;6618;The Expanse;378;Saison 1
+406;6618;The Expanse;378;Saison 2
+407;6617;Mission plus-value;379;Saison 1
+408;6616;Malaterra;380;Saison 1
+409;6614;The Romeo Section;382;Saison 1
+410;6614;The Romeo Section;382;Saison 2
+411;6613;Real Rob;383;Saison 1
+412;6612;Chicago Med;384;Saison 1
+413;6612;Chicago Med;384;Saison 2
+414;6612;Chicago Med;384;Saison 4
+415;6611;La Villa des coeurs brisés;385;Saison 1
+416;6611;La Villa des coeurs brisés;385;Saison 2
+417;6610;River;386;Saison 1
+418;6609;Versailles;387;Saison 1
+419;6608;Au service de la France;388;Saison 1
+420;6607;Alone, les survivants;389;Saison 1
+421;6606;Les Grosses Têtes;390;Saison 4
+422;6605;Les Contes d'Avonlea (Road to Avonlea);391;Saison 1
+423;6605;Les Contes d'Avonlea (Road to Avonlea);391;Saison 2
+424;6605;Les Contes d'Avonlea (Road to Avonlea);391;Saison 3
+425;6605;Les Contes d'Avonlea (Road to Avonlea);391;Saison 4
+426;6605;Les Contes d'Avonlea (Road to Avonlea);391;Saison 5
+427;6605;Les Contes d'Avonlea (Road to Avonlea);391;Saison 6
+428;6605;Les Contes d'Avonlea (Road to Avonlea);391;Saison 7
+429;6604;Nouvelle Adresse;392;Saison 1
+430;6604;Nouvelle Adresse;392;Saison 2
+431;6604;Nouvelle Adresse;392;Saison 3
+432;6603;Les Héros du Gazon;393;Saison 1
+433;6602;Hair, le Meilleur Coiffeur;394;Saison 1
+434;6601;Rush (2008);395;Saison 1
+435;6601;Rush (2008);395;Saison 2
+436;6601;Rush (2008);395;Saison 3
+437;6601;Rush (2008);395;Saison 4
+438;6600;800 words;396;Saison 1
+439;6600;800 words;396;Saison 2
+440;6599;Master of None;397;Saison 1
+441;6598;C'est mon choix;398;Saison 6
+442;6597;Flesh and Bone;399;Saison 1
+443;6596;Le Passager;400;Saison 1
+444;6595;Apocalypse (2015) - Staline;401;Saison 1
+445;6594;Folie Passagère;402;Saison 1
+446;6592;O.V.N.I. (2005 - The World's Strangest UFO Stories);404;Saison 1
+447;6591;Ash vs Evil Dead;405;Saison 1
+448;6591;Ash vs Evil Dead;405;Saison 2
+449;6590;Detectorists;406;Saison 1
+450;6590;Detectorists;406;Saison 2
+451;6589;En immersion (2016);407;Saison 1
+452;6588;La Dernière offre (Four Rooms UK);408;Saison 1
+453;6587;Wicked City;409;Saison 1
+454;6586;Panthers / The Last Panthers;410;Saison 1
+455;6585;SOS un boulot pour mon ado;411;Saison 1
+456;6584;Collection Les Saisons meurtrières - Commissaire Rousseau;412;Saison 1
+457;6583;Taratata;413;Saison 1
+458;6582;Le Labo de Damidot;414;Saison 1
+459;6581;Cauchemar chez le coiffeur;415;Saison 1
+460;6580;Un Chef en prison;416;Saison 1
+461;6579;Beastmaster, le dernier des survivants;417;Saison 1
+462;6579;Beastmaster, le dernier des survivants;417;Saison 2
+463;6579;Beastmaster, le dernier des survivants;417;Saison 3
+464;6578;Sociétés secrètes (Codes and Conspiracies);418;Saison 1
+465;6577;Face à France;419;Saison 2
+466;6576;Les Ieuvs : Coup de jeunes à Vegas;420;Saison 1
+467;6574;Hypnose, le grand jeux;422;Saison 1
+468;6573;Une Chance de trop;423;Saison 1
+469;6572;The Last Kingdom;424;Saison 1
+470;6571;Dark World Equilibrium;425;Saison 1
+471;6568;Faut qu'ça brille ! (Obsessive Compulsive Cleaners);428;Saison 1
+472;6568;Faut qu'ça brille ! (Obsessive Compulsive Cleaners);428;Saison 2
+473;6567;Amour à Manhattan (Una maid en Manhattan);429;Saison 1
+474;6566;The Muppets;430;Saison 1
+475;6565;Code Black;431;Saison 1
+476;6565;Code Black;431;Saison 2
+477;6564;The Grinder;432;Saison 1
+478;6563;Grandfathered;433;Saison 1
+479;6562;You, Me and The Apocalypse;434;Saison 1
+480;6561;Go back to where you came from (Retourne d'où tu viens);435;Saison 3
+481;6560;Les Chefs!;436;Saison 5
+482;6560;Les Chefs!;436;Saison 6
+483;6559;Testé sous contrôle médical;437;Saison 1
+484;6558;Quantico;438;Saison 1
+485;6558;Quantico;438;Saison 2
+486;6557;Adventure Time;439;Saison 1
+487;6557;Adventure Time;439;Saison 2
+488;6557;Adventure Time;439;Saison 3
+489;6557;Adventure Time;439;Saison 4
+490;6557;Adventure Time;439;Saison 5
+491;6557;Adventure Time;439;Saison 7
+492;6556;Dix pour cent;440;Saison 1
+493;6555;Clarence;441;Saison 2
+494;6555;Clarence;441;Saison 3
+495;6554;Heroes Reborn;442;Saison 1
+496;6553;Témoin sous silence;443;Saison 1
+497;6552;Destins brisés;444;Saison 1
+498;6551;La loi d'Alexandre;445;Saison 1
+499;6550;Ronde de Nuit;446;Saison 1
+500;6549;Life in Pieces;447;Saison 1
+501;6549;Life in Pieces;447;Saison 2
+502;6548;Scream Queens;448;Saison 1
+503;6548;Scream Queens;448;Saison 2
+504;6547;Minority Report;449;Saison 1
+505;6546;Thunderbirds (2015) - Thunderbirds Are Go;450;Saison 1
+506;6545;Fried;451;Saison 1
+507;6543;Le Chevalier de Maison-Rouge;453;Saison 1
+508;6541;Passeur d'enfants;455;Saison 1
+509;6540;Redfern Now;456;Saison 1
+510;6539;Kevin From Work;457;Saison 1
+511;6538;Les Rois du Barbecue;458;Saison 1
+512;6537;Deutschland 83;459;Saison 1
+513;6536;21 Jours...;460;Saison 1
+514;6536;21 Jours...;460;Saison 2
+515;6536;21 Jours...;460;Saison 3
+516;6536;21 Jours...;460;Saison 4
+517;6535;Alex Hugo;461;Saison 1
+518;6534;The Apprentice: qui décrochera le job ?;462;Saison 1
+519;6533;Blunt Talk;463;Saison 1
+520;6533;Blunt Talk;463;Saison 2
+521;6532;The Divorce;464;Saison 1
+522;6531;L'Académie des 9 (L'Académie des neuf);465;Saison 6
+523;6530;Le Virginien;466;Saison 2
+524;6528;Dans les yeux dOlivier;468;Saison 1
+525;6528;Dans les yeux dOlivier;468;Saison 2
+526;6528;Dans les yeux dOlivier;468;Saison 3
+527;6528;Dans les yeux dOlivier;468;Saison 4
+528;6528;Dans les yeux dOlivier;468;Saison 5
+529;6528;Dans les yeux dOlivier;468;Saison 6
+530;6527;Le Mystère du lac;469;Saison 1
+531;6526;Together;470;Saison 1
+532;6525;Commissaire Léa Sommer;471;Saison 1
+533;6525;Commissaire Léa Sommer;471;Saison 2
+534;6525;Commissaire Léa Sommer;471;Saison 3
+535;6524;Chère Marianne;472;Saison 1
+536;6523;La Grande Soirée des parodies TV;473;Saison 1
+537;6522;Le Grand Concours des Enfants;474;Saison 1
+538;6521;Le Grand Concours des Animateurs;475;Saison 1
+539;6520;Heimat - Une chronique Allemande;476;Saison 1
+540;6519;Ces émissions qui nous ont marqués;477;Saison 1
+541;6518;Les Otages du désert (Los nuestros);478;Saison 1
+542;6512;Le Temps des copains;484;Saison 1
+543;6506;Ties That Bind;490;Saison 1
+544;6505;Residue;491;Saison 1
+545;6504;The Team (2015);492;Saison 1
+546;6503;Show Me a Hero;493;Saison 1
+547;6502;Les Ch'tis vs les Marseillais;494;Saison 1
+548;6502;Les Ch'tis vs les Marseillais;494;Saison 2
+549;6501;Le Gerfaut;495;Saison 1
+550;6500;Lucifer;496;Saison 1
+551;6500;Lucifer;496;Saison 2
+552;6499;Chez Victoire;497;Saison 1
+553;6498;Blindspot;498;Saison 1
+554;6498;Blindspot;498;Saison 2
+555;6497;Marco Polo (2012);499;Saison 1
+556;6496;Marco Polo (2007);500;Saison 1
+557;6495;Marco Polo (1982);501;Saison 1
+558;6494;Boom : gagner ne tient qu'à un fil !;502;Saison 1
+559;6493;Histoires d'étoiles (Seven Ages of Starlight);503;Saison 1
+560;6492;Appelez-moi Caitlyn (I Am Cait);504;Saison 1
+561;6492;Appelez-moi Caitlyn (I Am Cait);504;Saison 2
+562;6491;Les Mariées de l'Isle Bourbon;505;Saison 1
+563;6490;Mr. Robinson;506;Saison 1
+564;6489;Ange de feu;507;Saison 1
+565;6488;Wet Hot American Summer : First Day of Camp;508;Saison 1
+566;6487;Beauregard;509;Saison 1
+567;6486;Mieux vaut en rire;510;Saison 1
+568;6485;La Science de l'étrange;511;Saison 1
+569;6484;Significant Mother;512;Saison 1
+570;6483;Shokuzai;513;Saison 1
+571;6482;Down Dog;514;Saison 1
+572;6481;Le Meilleur Menu de France;515;Saison 1
+573;6478;Another Period;517;Saison 1
+574;6478;Another Period;517;Saison 2
+575;6477;Sex&Drugs&Rock&Roll;518;Saison 1
+576;6477;Sex&Drugs&Rock&Roll;518;Saison 2
+577;6476;Complications;519;Saison 1
+578;6475;La Vocation d'Adrienne;520;Saison 1
+579;6474;Le Grand Blind Test;521;Saison 2
+580;6474;Le Grand Blind Test;521;Saison 3
+581;6473;L'Amour est dans le pré : seconde chance (France);522;Saison 1
+582;6471;Adèle;524;Saison 2
+583;6470;Le Tourbillon des jours;525;Saison 1
+584;6466;Les Grandes Grandes Vacances;529;Saison 1
+585;6465;Criminels 2.0;530;Saison 1
+586;6461;LoliRock;534;Saison 1
+587;6460;Brokenwood;535;Saison 1
+588;6459;Les Secrets du volcan;536;Saison 1
+589;6458;Crimes et Botanique;537;Saison 1
+590;6457;Incroyables Championnats;538;Saison 1
+591;6456;El Capitan;539;Saison 1
+592;6455;Wishlist : la liste de vos envies;540;Saison 1
+593;6455;Wishlist : la liste de vos envies;540;Saison 2
+594;6453;Chasseurs d'appart;542;Saison 1
+595;6452;Tellement Gay ! Homosexualité et pop culture;543;Saison 1
+596;6451;Catastrophe;544;Saison 1
+597;6451;Catastrophe;544;Saison 2
+598;6450;Captain Club (Caps Club);545;Saison 1
+599;6449;Zoo (2015);546;Saison 1
+600;6449;Zoo (2015);546;Saison 2
+601;6448;Scream;547;Saison 1
+602;6448;Scream;547;Saison 2
+603;6447;Collection Meurtres à...;548;Saison 1
+604;6447;Collection Meurtres à...;548;Saison 2
+605;6447;Collection Meurtres à...;548;Saison 3
+606;6446;Qui est la Taupe ?;549;Saison 1
+607;6445;Odd Mom Out;550;Saison 1
+608;6445;Odd Mom Out;550;Saison 2
+609;6444;Le Gros Show;551;Saison 1
+610;6443;Michel Strogoff (1975);552;Saison 1
+611;6440;Got to Dance, le meilleur danseur;555;Saison 1
+612;6436;The Brink;559;Saison 1
+613;6435;Ballers;560;Saison 1
+614;6435;Ballers;560;Saison 2
+615;6434;Clipped;561;Saison 1
+616;6428;Denis la petite peste;567;Saison 1
+617;6428;Denis la petite peste;567;Saison 2
+618;6427;Les Rois du Camping;568;Saison 1
+619;6426;Vendredi 13 ou L'Entrepôt du diable;569;Saison 1
+620;6425;Rock'n Roll Circus;570;Saison 1
+621;6424;The Astronaut Wives Club;571;Saison 1
+622;6423;Nina (2015);572;Saison 1
+623;6423;Nina (2015);572;Saison 2
+624;6422;Proof (2015);573;Saison 1
+625;6421;Jusqu'au bout du monde;574;Saison 1
+626;6420;100 Code;575;Saison 1
+627;6419;Les Rois du Shopping;576;Saison 1
+628;6418;Humans;577;Saison 1
+629;6418;Humans;577;Saison 2
+630;6417;Tatau;578;Saison 1
+631;6414;1992;581;Saison 1
+632;6407;Papa a raison;588;Saison 1
+633;6402;Dark Matter;593;Saison 1
+634;6402;Dark Matter;593;Saison 2
+635;6401;Becoming;594;Saison 1
+636;6398;Stonemouth;597;Saison 1
+637;6397;1864 : amour et trahisons en temps de guerre;598;Saison 1
+638;6396;Marc et Sophie;599;Saison 1
+639;6396;Marc et Sophie;599;Saison 2
+640;6395;Maguy;600;Saison 1
+641;6395;Maguy;600;Saison 2
+642;6395;Maguy;600;Saison 3
+643;6395;Maguy;600;Saison 4
+644;6395;Maguy;600;Saison 5
+645;6395;Maguy;600;Saison 6
+646;6395;Maguy;600;Saison 7
+647;6395;Maguy;600;Saison 8
+648;6394;La Vie secrète de Marilyn Monroe (The Secret Life of Marilyn Monroe);601;Saison 1
+649;6393;La caméra explore le temps;602;Saison 1
+650;6392;Sense8;603;Saison 1
+651;6391;UnReal;604;Saison 1
+652;6391;UnReal;604;Saison 2
+653;6389;The Whispers;606;Saison 1
+654;6388;Intrusion;607;Saison 1
+655;6387;Aquarius;608;Saison 1
+656;6387;Aquarius;608;Saison 2
+657;6386;The Game;609;Saison 1
+658;6384;Texas Rising;611;Saison 1
+659;6383;Crowded;612;Saison 1
+660;6382;Mr. Robot;613;Saison 1
+661;6382;Mr. Robot;613;Saison 2
+662;6381;Le Journal de Bertrand Chameroy;614;Saison 1
+663;6380;Jonathan Strange & Mr. Norrell;615;Saison 1
+664;6379;Stitchers;616;Saison 1
+665;6379;Stitchers;616;Saison 2
+666;6378;Créatures extrêmes : le défi (Jim Henson's Creature Shop Challenge);617;Saison 1
+667;6377;Eugène de Savoie et l'Empire Ottoman;618;Saison 1
+668;6376;Supergirl;619;Saison 1
+669;6376;Supergirl;619;Saison 2
+670;6375;8MMM Aboriginal Radio;620;Saison 1
+671;6374;Shining : Les couloirs de la peur;621;Saison 1
+672;6373;Between;622;Saison 1
+673;6373;Between;622;Saison 2
+674;6372;Flics : leur vie en direct;623;Saison 1
+675;6371;The Island, seuls au monde;624;Saison 1
+676;6371;The Island, seuls au monde;624;Saison 2
+677;6370;Las Vegas Academy;625;Saison 1
+678;6368;Profession Négociateur (Kidnap and Ransom);627;Saison 1
+679;6368;Profession Négociateur (Kidnap and Ransom);627;Saison 2
+680;6366;La Force du Coeur (Corazón valiente);629;Saison 1
+681;6365;Le Grand Charles;630;Saison 1
+682;6364;Killing Jesus;631;Saison 1
+683;6363;Jésus de Nazareth;632;Saison 1
+684;6362;Grace et Frankie;633;Saison 1
+685;6361;Le Grand Journal;634;Saison 11
+686;6360;Je vous demande de vous arrêter;635;Saison 1
+687;6359;Les Hommes de coeur;636;Saison 1
+688;6358;Cellule identité;637;Saison 1
+689;6357;Les Soeurs Kardashian dans les Hamptons;638;Saison 1
+690;6356;La Vie devant elles;639;Saison 1
+691;6355;L'héritage empoisonné (Tjockare än Vatten);640;Saison 1
+692;6354;Le Bureau des légendes;641;Saison 1
+693;6354;Le Bureau des légendes;641;Saison 2
+694;6353;CQFD ! Ce qu'il fallait détourner;642;Saison 1
+695;6352;Tout le monde Joue;643;Saison 1
+696;6351;Wayward Pines;644;Saison 1
+697;6351;Wayward Pines;644;Saison 2
+698;6350;Crims;645;Saison 1
+699;6349;The Passing Bells;646;Saison 1
+700;6348;Disparue (2015);647;Saison 1
+701;6347;The Messengers;648;Saison 1
+702;6346;Nous, otages des SS (Wir Geiseln der SS);649;Saison 1
+703;6345;Patron incognito (US) - Undercover Boss (US);650;Saison 2
+704;6344;Le Code du tueur (Code of a Killer);651;Saison 1
+705;6343;Nymphs;652;Saison 1
+706;6342;Wouf, quel chien sera à la hauteur ?;653;Saison 1
+707;6341;5 Salons qui décoiffent;654;Saison 1
+708;6340;Weird Loners;655;Saison 1
+709;6339;Daredevil;656;Saison 1
+710;6339;Daredevil;656;Saison 2
+711;6338;Balzac;657;Saison 1
+712;6337;American Odyssey;658;Saison 1
+713;6336;Your Family Or Mine;659;Saison 1
+714;6335;The Lizzie Borden Chronicles;660;Saison 1
+715;6334;Nos Années 90;661;Saison 1
+716;6333;A.D. (A.D. The Bible Continues);662;Saison 1
+717;6332;Mon Partenaire particulier;663;Saison 1
+718;6331;Younger;664;Saison 1
+719;6331;Younger;664;Saison 2
+720;6331;Younger;664;Saison 3
+721;6330;Ordinary Lies;665;Saison 1
+722;6330;Ordinary Lies;665;Saison 2
+723;6329;Our Zoo;666;Saison 1
+724;6328;Olympus;667;Saison 1
+725;6327;Agent K.C.;668;Saison 1
+726;6327;Agent K.C.;668;Saison 4
+727;6326;Big Time in Hollywood, FL;669;Saison 1
+728;6325;Grantchester;670;Saison 1
+729;6324;Templeton;671;Saison 1
+730;6323;Johnny Staccato;672;Saison 1
+731;6322;Le Grand Match;673;Saison 1
+732;6322;Le Grand Match;673;Saison 2
+733;6321;Epic Ink;674;Saison 1
+734;6320;Indian Summers;675;Saison 1
+735;6320;Indian Summers;675;Saison 2
+736;6317;Recherche dans l'intérêt des familles;678;Saison 1
+737;6312;Hell's Kitchen (US);683;Saison 4
+738;6312;Hell's Kitchen (US);683;Saison 5
+739;6312;Hell's Kitchen (US);683;Saison 7
+740;6311;Guillaume Tell (1958);684;Saison 1
+741;6310;Lassie (1954);685;Saison 12
+742;6309;Les Aventures du Colonel March;686;Saison 1
+743;6308;Bloodline;687;Saison 1
+744;6308;Bloodline;687;Saison 2
+745;6307;Top Gear France;688;Saison 1
+746;6307;Top Gear France;688;Saison 2
+747;6306;The Good Witch;689;Saison 1
+748;6306;The Good Witch;689;Saison 2
+749;6305;One Big Happy;690;Saison 1
+750;6304;The Royals;691;Saison 1
+751;6304;The Royals;691;Saison 2
+752;6303;Banished;692;Saison 1
+753;6302;iZombie;693;Saison 1
+754;6302;iZombie;693;Saison 2
+755;6301;Spotless;694;Saison 1
+756;6300;Les Kassos;695;Saison 1
+757;6300;Les Kassos;695;Saison 2
+758;6299;SOS Tabatha;696;Saison 1
+759;6299;SOS Tabatha;696;Saison 2
+760;6299;SOS Tabatha;696;Saison 3
+761;6299;SOS Tabatha;696;Saison 4
+762;6299;SOS Tabatha;696;Saison 5
+763;6298;The Red Tent;697;Saison 1
+764;6297;Survivors Remorse;698;Saison 1
+765;6297;Survivors Remorse;698;Saison 2
+766;6297;Survivors Remorse;698;Saison 3
+767;6296;Powers (2015);699;Saison 1
+768;6296;Powers (2015);699;Saison 2
+769;6296;Powers (2015);699;Saison 3
+770;6295;Poldark;700;Saison 1
+771;6295;Poldark;700;Saison 2
+772;6294;Experiences Interdites (Dark Matters: Twisted But True);701;Saison 1
+773;6294;Experiences Interdites (Dark Matters: Twisted But True);701;Saison 2
+774;6292;Les Revenants (US);703;Saison 1
+775;6291;The Code;704;Saison 1
+776;6291;The Code;704;Saison 2
+777;6290;American Crime;705;Saison 1
+778;6290;American Crime;705;Saison 2
+779;6289;Les Extraordinaires (Les Extra-Ordinaires);706;Saison 1
+780;6288;En Chansons;707;Saison 2
+781;6287;Unbreakable Kimmy Schmidt;708;Saison 1
+782;6287;Unbreakable Kimmy Schmidt;708;Saison 2
+783;6286;Dig (2015);709;Saison 1
+784;6285;CSI: Cyber;710;Saison 1
+785;6285;CSI: Cyber;710;Saison 2
+786;6284;Hangar 1 : les dossiers OVNI (Hangar 1: The UFO Files);711;Saison 1
+787;6284;Hangar 1 : les dossiers OVNI (Hangar 1: The UFO Files);711;Saison 2
+788;6283;Dossiers Surnaturels;712;Saison 1
+789;6282;Battle Creek;713;Saison 1
+790;6281;Adam recherche Eve;714;Saison 1
+791;6280;Projet Fashion;715;Saison 1
+792;6279;Oscars du cinéma;716;Saison 1
+793;6278;X Company;717;Saison 1
+794;6278;X Company;717;Saison 2
+795;6277;Secrets and Lies (US);718;Saison 1
+796;6277;Secrets and Lies (US);718;Saison 2
+797;6276;Mon Food Truck à la clé;719;Saison 1
+798;6275;Un Zoo à Paris;720;Saison 1
+799;6275;Un Zoo à Paris;720;Saison 2
+800;6274;The Last Man on Earth;721;Saison 1
+801;6274;The Last Man on Earth;721;Saison 2
+802;6274;The Last Man on Earth;721;Saison 3
+803;6273;Gangland Undercover;722;Saison 1
+804;6272;Peplum;723;Saison 1
+805;6271;Dos au mur;724;Saison 1
+806;6270;Liebe am Fjord;725;Saison 4
+807;6269;The Odd Couple;726;Saison 1
+808;6269;The Odd Couple;726;Saison 2
+809;6269;The Odd Couple;726;Saison 3
+810;6268;Unique au monde;727;Saison 1
+811;6267;Partners in Crime;728;Saison 1
+812;6266;Une Place à prendre (The Casual Vacancy);729;Saison 1
+813;6265;L'Homme de la situation;730;Saison 1
+814;6264;Les Témoins;731;Saison 1
+815;6263;Stargate Infinity;732;Saison 1
+816;6262;Xpérience;733;Saison 1
+817;6261;Victoires de la Musique Classique;734;Saison 1
+818;6260;Cucumber;735;Saison 1
+819;6259;Victoires de la musique;736;Saison 1
+820;6258;Stockholm 1628, l'aventure du Vasa (Vasa 1628);737;Saison 1
+821;6257;The Slap (US);738;Saison 1
+822;6255;Virage Nord;740;Saison 1
+823;6253;Tout peut arriver;742;Saison 1
+824;6252;Chefs (2015);743;Saison 1
+825;6252;Chefs (2015);743;Saison 2
+826;6251;Tous les couples sont permis;744;Saison 1
+827;6250;Le bonheur au bout du chemin (Anne of Green Gables);745;Saison 1
+828;6249;Allegiance (2015);746;Saison 1
+829;6248;La Taupe;747;Saison 1
+830;6248;La Taupe;747;Saison 2
+831;6247;Better Call Saul;748;Saison 1
+832;6247;Better Call Saul;748;Saison 2
+833;6244;Wolf Hall;751;Saison 1
+834;6243;Fresh Off The Boat;752;Saison 1
+835;6243;Fresh Off The Boat;752;Saison 2
+836;6243;Fresh Off The Boat;752;Saison 3
+837;6242;Meurtres à Sandhamn (Morden i Sandhamn);753;Saison 1
+838;6242;Meurtres à Sandhamn (Morden i Sandhamn);753;Saison 2
+839;6242;Meurtres à Sandhamn (Morden i Sandhamn);753;Saison 3
+840;6242;Meurtres à Sandhamn (Morden i Sandhamn);753;Saison 4
+841;6242;Meurtres à Sandhamn (Morden i Sandhamn);753;Saison 5
+842;6241;Broad City;754;Saison 1
+843;6241;Broad City;754;Saison 3
+844;6240;Un rêve, un coach (Dienstags ein Held sein);755;Saison 1
+845;6239;Le Vent des moissons;756;Saison 1
+846;6238;Jalna;757;Saison 1
+847;6237;The Book of Negroes;758;Saison 1
+848;6236;Talent Street;759;Saison 1
+849;6235;Le Divan de Marc-Olivier Fogiel;760;Saison 1
+850;6235;Le Divan de Marc-Olivier Fogiel;760;Saison 2
+851;6233;Resto sous surveillance (Restaurant Stakeout);762;Saison 1
+852;6233;Resto sous surveillance (Restaurant Stakeout);762;Saison 2
+853;6233;Resto sous surveillance (Restaurant Stakeout);762;Saison 3
+854;6233;Resto sous surveillance (Restaurant Stakeout);762;Saison 4
+855;6232;On n'a pas fait le tour;763;Saison 1
+856;6231;Backstrom;764;Saison 1
+857;6230;Heidi (2015);765;Saison 1
+858;6229;Mystère (2007);766;Saison 1
+859;6228;Le Meilleur des 4/3 de Jean-Luc Lemoine;767;Saison 1
+860;6227;Open Heart;768;Saison 1
+861;6226;Norbert, commis d'office;769;Saison 1
+862;6226;Norbert, commis d'office;769;Saison 2
+863;6225;Fortitude;770;Saison 1
+864;6224;The Heirs : Les Héritiers (2013);771;Saison 1
+865;6223;Lanfeust Quest;772;Saison 1
+866;6222;Sons of Liberty;773;Saison 1
+867;6221;Banana;774;Saison 1
+868;6220;La France passe le test;775;Saison 1
+869;6219;The Man In The High Castle;776;Saison 1
+870;6218;Mapp and Lucia;777;Saison 1
+871;6217;Hindsight;778;Saison 1
+872;6216;Crimes en série;779;Saison 1
+873;6215;Gomorra;780;Saison 1
+874;6215;Gomorra;780;Saison 2
+875;6214;Mad Dogs (US);781;Saison 1
+876;6213;Girlfriends Guide To Divorce;782;Saison 1
+877;6213;Girlfriends Guide To Divorce;782;Saison 2
+878;6212;Le Poste de surveillance de Camille Combal;783;Saison 1
+879;6211;Les Enquêtes de Vera;784;Saison 1
+880;6211;Les Enquêtes de Vera;784;Saison 2
+881;6211;Les Enquêtes de Vera;784;Saison 3
+882;6211;Les Enquêtes de Vera;784;Saison 4
+883;6211;Les Enquêtes de Vera;784;Saison 5
+884;6211;Les Enquêtes de Vera;784;Saison 6
+885;6210;12 Monkeys;785;Saison 1
+886;6210;12 Monkeys;785;Saison 2
+887;6209;Accusé;786;Saison 1
+888;6209;Accusé;786;Saison 2
+889;6208;Paris;787;Saison 1
+890;6207;Man Seeking Woman;788;Saison 1
+891;6207;Man Seeking Woman;788;Saison 2
+892;6206;Insoupçonnable;789;Saison 1
+893;6206;Insoupçonnable;789;Saison 2
+894;6206;Insoupçonnable;789;Saison 3
+895;6206;Insoupçonnable;789;Saison 4
+896;6205;La Tour (Der Turm);790;Saison 1
+897;6204;Eye Candy;791;Saison 1
+898;6203;Napoléon, la campagne de Russie;792;Saison 1
+899;6202;Togetherness;793;Saison 1
+900;6202;Togetherness;793;Saison 2
+901;6201;Empire (2015);794;Saison 1
+902;6201;Empire (2015);794;Saison 2
+903;6201;Empire (2015);794;Saison 3
+904;6200;Agent Carter;795;Saison 1
+905;6200;Agent Carter;795;Saison 2
+906;6199;Galavant;796;Saison 1
+907;6199;Galavant;796;Saison 2
+908;6198;Tango;797;Saison 1
+909;6197;50 façons de (presque) tuer sa mère (50 ways to kill your mammy);798;Saison 1
+910;6196;Prodiges;799;Saison 1
+911;6196;Prodiges;799;Saison 2
+912;6195;Surpriiise ! By Cristina Cordula;800;Saison 1
+913;6194;Talent Street Kids;801;Saison 1
+914;6193;Gun;802;Saison 1
+915;6192;Entre vents et marées;803;Saison 1
+916;6191;Love/Hate;804;Saison 1
+917;6191;Love/Hate;804;Saison 2
+918;6191;Love/Hate;804;Saison 3
+919;6191;Love/Hate;804;Saison 4
+920;6191;Love/Hate;804;Saison 5
+921;6190;Ascension;805;Saison 1
+922;6189;L'âge en fleur;806;Saison 1
+923;6188;Bienvenue à l'hôtel;807;Saison 1
+924;6187;Le Mag / Daily Mag (NRJ 12);808;Saison 5
+925;6187;Le Mag / Daily Mag (NRJ 12);808;Saison 6
+926;6186;Les Copains de la Forêt;809;Saison 1
+927;6185;Marco Polo (2014);810;Saison 1
+928;6185;Marco Polo (2014);810;Saison 2
+929;6184;Flynn Carson et les nouveaux aventuriers (The Librarians);811;Saison 1
+930;6184;Flynn Carson et les nouveaux aventuriers (The Librarians);811;Saison 2
+931;6184;Flynn Carson et les nouveaux aventuriers (The Librarians);811;Saison 3
+932;6183;Qui allez-vous croire ?;812;Saison 1
+933;6182;L'Âge heureux;813;Saison 1
+934;6181;Une Maman formidable;814;Saison 1
+935;6179;Chasseurs de légendes (Legend Hunters);816;Saison 1
+936;6178;Rescue unité spéciale (Rescue: Special Ops);817;Saison 1
+937;6178;Rescue unité spéciale (Rescue: Special Ops);817;Saison 2
+938;6178;Rescue unité spéciale (Rescue: Special Ops);817;Saison 3
+939;6176;Pieds nus sur le sol rouge (Descalç sobre la terra vermella);819;Saison 1
+940;6175;Génération Canal+ (Génération Canal Plus);820;Saison 1
+941;6174;Nous, les hommes de 14-18 (Our World War);821;Saison 1
+942;6173;V;822;Saison 7
+943;6172;Interventions;823;Saison 1
+944;6171;Duel au soleil;824;Saison 1
+945;6171;Duel au soleil;824;Saison 2
+946;6170;Ceux de 14;825;Saison 1
+947;6169;Roman noir (Mystery Woman);826;Saison 1
+948;6168;Criss Angel Believe;827;Saison 1
+949;6166;Le Monde de Jamy;829;Saison 1
+950;6166;Le Monde de Jamy;829;Saison 2
+951;6166;Le Monde de Jamy;829;Saison 3
+952;6164;Une Saison au Zoo;831;Saison 1
+953;6164;Une Saison au Zoo;831;Saison 2
+954;6164;Une Saison au Zoo;831;Saison 3
+955;6164;Une Saison au Zoo;831;Saison 4
+956;6164;Une Saison au Zoo;831;Saison 5
+957;6163;Halo : Nightfall;832;Saison 1
+958;6162;Evermoor;833;Saison 1
+959;6160;Bleak House;835;Saison 1
+960;6158;Duels en cuisine;837;Saison 1
+961;6157;Une Saison à la Juilliard School (Dance School: Juilliard);838;Saison 1
+962;6155;State of Affairs;840;Saison 1
+963;6154;Une Saison au Cirque;841;Saison 1
+964;6153;Les Semailles et les Moissons;842;Saison 1
+965;6152;Talk club;843;Saison 1
+966;6149;Abîme de la Passion (Abismo de pasión);846;Saison 1
+967;6148;The Smoke;847;Saison 1
+968;6147;Hôtesses, stewards, pilotes : une vie entre deux avions;848;Saison 1
+969;6146;ANZAC Girls;849;Saison 1
+970;6145;Dancing on the Edge;850;Saison 1
+971;6144;Anarchy;851;Saison 1
+972;6143;Est d'Eden (East of Eden);852;Saison 1
+973;6142;Objectif top chef;853;Saison 1
+974;6142;Objectif top chef;853;Saison 2
+975;6140;Lonesome Dove (1996) : les jeunes années;855;Saison 1
+976;6138;Lonesome Dove (1993) : la loi des justes;857;Saison 1
+977;6137;Lonesome Dove (1989);858;Saison 1
+978;6136;Cleaners;859;Saison 1
+979;6136;Cleaners;859;Saison 2
+980;6135;Une vie volée (A Vida da Gente);860;Saison 1
+981;6134;La Clinique du coeur (Die Alpenklinik);861;Saison 6
+982;6133;Les Maîtresses de l'Histoire;862;Saison 1
+983;6132;L'Histoire au quotidien;863;Saison 1
+984;6131;Olive Kitteridge;864;Saison 1
+985;6130;C'est votre vie !;865;Saison 1
+986;6130;C'est votre vie !;865;Saison 2
+987;6130;C'est votre vie !;865;Saison 3
+988;6129;Kingdom;866;Saison 1
+989;6129;Kingdom;866;Saison 2
+990;6129;Kingdom;866;Saison 4
+991;6128;Alice et Charlie;867;Saison 1
+992;6127;Le Monde de Riley (Girl Meets World);868;Saison 1
+993;6126;The Unknown;869;Saison 1
+994;6125;L'Angle éco;870;Saison 1
+995;6125;L'Angle éco;870;Saison 2
+996;6125;L'Angle éco;870;Saison 3
+997;6124;La Reine et le Cardinal;871;Saison 1
+998;6123;The McCarthys;872;Saison 1
+999;6122;Lassie (2014);873;Saison 1
+1000;6121;Les Mini Sosies font leur show;874;Saison 1
+1001;6120;Serangoon Road;875;Saison 1
+1002;6119;The Missing (2014);876;Saison 1
+1003;6119;The Missing (2014);876;Saison 2
+1004;6119;The Missing (2014);876;Saison 5
+1005;6118;Marry Me;877;Saison 1
+1006;6117;Huff;878;Saison 1
+1007;6117;Huff;878;Saison 2
+1008;6116;NY Ink (New York Ink);879;Saison 1
+1009;6115;Business Code;880;Saison 1
+1010;6114;M6 fête les 30 ans du Top 50;881;Saison 1
+1011;6113;Bunker;882;Saison 1
+1012;6112;Chéri, t'es le meilleur;883;Saison 1
+1013;6111;Total Blackout;884;Saison 1
+1014;6111;Total Blackout;884;Saison 2
+1015;6111;Total Blackout;884;Saison 3
+1016;6110;Vu à la télé;885;Saison 1
+1017;6109;Play It Again, Dick;886;Saison 1
+1018;6108;The Driver;887;Saison 1
+1019;6107;Benched;888;Saison 1
+1020;6106;The Cover, qui fera la meilleure version ?;889;Saison 1
+1021;6105;The Evidence : les preuves du crime;890;Saison 1
+1022;6104;Mulaney;891;Saison 1
+1023;6103;La Malédiction du faucon (Fluch des Falken);892;Saison 1
+1024;6102;Les Chefs contre-attaquent;893;Saison 1
+1025;6102;Les Chefs contre-attaquent;893;Saison 2
+1026;6101;Public Morals;894;Saison 1
+1027;6101;Public Morals;894;Saison 6
+1028;6100;Alcootest;895;Saison 1
+1029;6099;Jane The Virgin;896;Saison 1
+1030;6099;Jane The Virgin;896;Saison 2
+1031;6099;Jane The Virgin;896;Saison 3
+1032;6098;Cristela;897;Saison 1
+1033;6097;Marley's Ghosts;898;Saison 1
+1034;6096;A l'aube de la destruction (Eve of Destruction);899;Saison 1
+1035;6095;Strange Empire;900;Saison 1
+1036;6094;A prendre ou à laisser (France);901;Saison 6
+1037;6094;A prendre ou à laisser (France);901;Saison 8
+1038;6094;A prendre ou à laisser (France);901;Saison 9
+1039;6093;Les 30 Histoires;902;Saison 1
+1040;6093;Les 30 Histoires;902;Saison 2
+1041;6093;Les 30 Histoires;902;Saison 3
+1042;6092;The Affair;903;Saison 1
+1043;6092;The Affair;903;Saison 2
+1044;6092;The Affair;903;Saison 3
+1045;6091;Le jardin préféré des Français;904;Saison 1
+1046;6091;Le jardin préféré des Français;904;Saison 2
+1047;6090;Un Soir à la Tour Eiffel;905;Saison 1
+1048;6089;Gracepoint;906;Saison 1
+1049;6088;Lovesick (Scrotal Recall);907;Saison 1
+1050;6088;Lovesick (Scrotal Recall);907;Saison 2
+1051;6087;Je veux épouser 'Harry' (I Wanna Marry 'Harry');908;Saison 1
+1052;6086;Manhattan Love Story;909;Saison 1
+1053;6085;Star Wars Rebels;910;Saison 1
+1054;6085;Star Wars Rebels;910;Saison 2
+1055;6085;Star Wars Rebels;910;Saison 3
+1056;6084;Bad Judge;911;Saison 1
+1057;6083;Black Jesus;912;Saison 1
+1058;6083;Black Jesus;912;Saison 2
+1059;6082;Stalker;913;Saison 1
+1060;6081;Transparent;914;Saison 1
+1061;6081;Transparent;914;Saison 2
+1062;6081;Transparent;914;Saison 3
+1063;6080;Happyland;915;Saison 1
+1064;6079;Les Thunderman (The Thundermans);916;Saison 1
+1065;6078;Friends Trip, qui sera le meilleur ami ?;917;Saison 1
+1066;6078;Friends Trip, qui sera le meilleur ami ?;917;Saison 2
+1067;6077;Montalbano, les premières enquêtes;918;Saison 1
+1068;6075;La Malédiction du Pharaon (The Curse of King Tut's Tom);919;Saison 1
+1069;6074;Black-Ish;920;Saison 1
+1070;6074;Black-Ish;920;Saison 3
+1071;6073;Vos Objets ont une histoire;921;Saison 1
+1072;6072;Murder (How To Get Away With Murder);922;Saison 1
+1073;6072;Murder (How To Get Away With Murder);922;Saison 2
+1074;6072;Murder (How To Get Away With Murder);922;Saison 3
+1075;6071;Jour de Brocante;923;Saison 1
+1076;6071;Jour de Brocante;923;Saison 2
+1077;6069;NCIS : Nouvelle-Orléans (NCIS : New Orleans);925;Saison 1
+1078;6069;NCIS : Nouvelle-Orléans (NCIS : New Orleans);925;Saison 2
+1079;6069;NCIS : Nouvelle-Orléans (NCIS : New Orleans);925;Saison 3
+1080;6068;Rising Star (France);926;Saison 1
+1081;6067;Scorpion;927;Saison 1
+1082;6067;Scorpion;927;Saison 2
+1083;6067;Scorpion;927;Saison 3
+1084;6066;Madam Secretary;928;Saison 1
+1085;6066;Madam Secretary;928;Saison 2
+1086;6066;Madam Secretary;928;Saison 3
+1087;6064;Glue;930;Saison 1
+1088;6063;Package Deal;931;Saison 1
+1089;6061;P'tit Quinquin;932;Saison 1
+1090;6060;Red Band Society;933;Saison 1
+1091;6059;Les Mystères de Laura;934;Saison 1
+1092;6059;Les Mystères de Laura;934;Saison 2
+1093;6058;When Calls the Heart (Le Coeur a ses raisons);935;Saison 0
+1094;6058;When Calls the Heart (Le Coeur a ses raisons);935;Saison 1
+1095;6058;When Calls the Heart (Le Coeur a ses raisons);935;Saison 2
+1096;6058;When Calls the Heart (Le Coeur a ses raisons);935;Saison 3
+1097;6057;Disparus (2014);936;Saison 1
+1098;6056;Femme de Viking (Die Frauen Der Wikinger);937;Saison 1
+1099;6055;Gotham;938;Saison 1
+1100;6055;Gotham;938;Saison 2
+1101;6055;Gotham;938;Saison 3
+1102;6054;The Cosmopolitans;939;Saison 1
+1103;6053;Z Nation;940;Saison 1
+1104;6053;Z Nation;940;Saison 2
+1105;6053;Z Nation;940;Saison 3
+1106;6053;Z Nation;940;Saison 5
+1107;6052;Chasing Shadows;941;Saison 1
+1108;6051;Cauchemar à l'hôtel (US-Hotel Hell);942;Saison 1
+1109;6051;Cauchemar à l'hôtel (US-Hotel Hell);942;Saison 2
+1110;6050;The Secrets;943;Saison 1
+1111;6049;Pièges de stars;944;Saison 1
+1112;6048;Prohibition, une expérience américaine;945;Saison 1
+1113;6047;Houdini;946;Saison 1
+1114;6046;Les Enfants volés (Niños robados);947;Saison 1
+1115;6045;Intervilles;948;Saison 25
+1116;6045;Intervilles;948;Saison 26
+1117;6045;Intervilles;948;Saison 27
+1118;6045;Intervilles;948;Saison 28
+1119;6044;Le Maillon faible;949;Saison 8
+1120;6043;Un flic;950;Saison 3
+1121;6043;Un flic;950;Saison 4
+1122;6042;Hand of God;951;Saison 1
+1123;6041;Jusqu'au dernier;952;Saison 1
+1124;6040;L'Heure de la peur (The Haunting Hour);953;Saison 1
+1125;6039;Le Village préféré des Français;954;Saison 1
+1126;6038;Hysteria;955;Saison 1
+1127;6037;L'Autre Femme (The Other Wife);956;Saison 1
+1128;6036;A to Z;957;Saison 1
+1129;6035;Cousu main;958;Saison 1
+1130;6034;La Guerre des Transports (Shipping Wars US);959;Saison 1
+1131;6033;Les Beaux malaises;960;Saison 1
+1132;6032;Selfie;961;Saison 1
+1133;6031;Forever (2014);962;Saison 1
+1134;6030;Mon chien est le meilleur;963;Saison 1
+1135;6029;Velvet;964;Saison 1
+1136;6029;Velvet;964;Saison 2
+1137;6029;Velvet;964;Saison 3
+1138;6029;Velvet;964;Saison 4
+1139;6028;The Voice Kids (France);965;Saison 1
+1140;6028;The Voice Kids (France);965;Saison 2
+1141;6028;The Voice Kids (France);965;Saison 3
+1142;6027;Married;966;Saison 1
+1143;6027;Married;966;Saison 2
+1144;6026;Les aventures des mers du Sud (Tales of the South Seas);967;Saison 1
+1145;6025;Vestiaires;968;Saison 3
+1146;6024;Intruders;969;Saison 1
+1147;6023;Des gîtes pas comme les autres;970;Saison 1
+1148;6022;Mon incroyable marché;971;Saison 1
+1149;6021;Backpackers;972;Saison 1
+1150;6020;Bienvenue au camping;973;Saison 1
+1151;6020;Bienvenue au camping;973;Saison 2
+1152;6020;Bienvenue au camping;973;Saison 3
+1153;6020;Bienvenue au camping;973;Saison 4
+1154;6019;Madrid Ink;974;Saison 1
+1155;6018;Legends (2014);975;Saison 1
+1156;6018;Legends (2014);975;Saison 2
+1157;6016;Every Witch Way;976;Saison 1
+1158;6015;Nos ch
