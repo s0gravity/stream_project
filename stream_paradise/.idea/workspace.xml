@@ -20,11 +20,11 @@
     <favorites_list name="stream_paradise" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="gold-skin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gold-skins/default/gold-skin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="17">
               <caret line="968" column="45" selection-start-line="968" selection-start-column="45" selection-end-line="968" selection-end-column="45" />
               <folding>
                 <marker date="1480166608129" expanded="true" signature="2751:2799" ph="SELECT * FRO... gold_posts" />
@@ -660,7 +660,7 @@
       <file leaf-file-name="gold-styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gold-skins/default/gold-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="14365">
               <caret line="845" column="46" selection-start-line="845" selection-start-column="46" selection-end-line="845" selection-end-column="46" />
               <folding />
             </state>
@@ -670,7 +670,7 @@
       <file leaf-file-name="fr.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gold-app/gold-lang/fr.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="901">
               <caret line="57" column="13" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="13" />
               <folding />
             </state>
@@ -680,7 +680,7 @@
       <file leaf-file-name="installer.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gold-skins/default/installer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
+            <state relative-caret-position="17">
               <caret line="3792" column="1" selection-start-line="3792" selection-start-column="1" selection-end-line="3792" selection-end-column="1" />
               <folding />
             </state>
@@ -715,8 +715,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1932" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -729,7 +729,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -742,13 +742,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -778,6 +772,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -812,33 +812,34 @@
       <option name="presentableId" value="Default" />
       <updated>1480116259718</updated>
       <workItem from="1480116263577" duration="19150000" />
+      <workItem from="1503136081976" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19150000" />
+    <option name="totallyTimeSpent" value="19173000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1932" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -890,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,68 +906,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/aside.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/aside-pages.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/aside-feedback.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/add-to-list.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/icon-favorited.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/cd-icon-username.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/eyes.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/next_episode.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/prev_episode.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/responsive-email.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/aside.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/aside-pages.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/aside-feedback.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/add-to-list.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/icon-favorited.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/cd-icon-username.svg" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/eyes.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/next_episode.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/prev_episode.png" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/images/responsive-email.jpg" />
     <entry file="file://$PROJECT_DIR$/gold-app/gold-lang/en.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="716">
           <caret line="173" column="38" selection-start-line="173" selection-start-column="38" selection-end-line="173" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,94 +994,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/gold-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/gold-styles1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="70" column="7" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/gold-skin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="257" column="60" selection-start-line="257" selection-start-column="60" selection-end-line="257" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/gold-styles.css" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/gold-styles1.css" />
+    <entry file="file://$PROJECT_DIR$/gold-skins/custom1/gold-skin.php" />
     <entry file="file://$PROJECT_DIR$/gold-app/gold-includes/ControllerInstaller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="600" column="44" selection-start-line="600" selection-start-column="44" selection-end-line="600" selection-end-column="44" />
-          <folding>
-            <marker date="1480164456664" expanded="true" signature="5083:5487" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="5555:5996" ph="INSERT INTO `gold_blocks`... " />
-            <marker date="1480164456664" expanded="true" signature="6107:6468" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="6536:7586" ph="INSERT INTO `gold_categories`... " />
-            <marker date="1480164456664" expanded="true" signature="7669:7878" ph="INSERT INTO `gold_categories`... " />
-            <marker date="1480164456664" expanded="true" signature="7990:8365" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="8539:8789" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="8857:8997" ph="INSERT INTO `gold_groups`... " />
-            <marker date="1480164456664" expanded="true" signature="9102:9391" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="9459:9699" ph="INSERT INTO `gold_menu`... " />
-            <marker date="1480164456664" expanded="true" signature="9805:10132" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="false" signature="11555:11563" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="11773:11781" ph="..." />
-            <marker date="1480164456664" expanded="true" signature="12403:12732" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="12800:12935" ph="INSERT INTO `gold_plugins`... " />
-            <marker date="1480164456664" expanded="true" signature="13052:13453" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="13521:14384" ph="INSERT INTO `gold_plugins_settings`... " />
-            <marker date="1480164456664" expanded="true" signature="14489:14739" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="14960:16132" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="16200:16967" ph="INSERT INTO `gold_users`... " />
-            <marker date="1480164456664" expanded="true" signature="17075:17390" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="17458:17854" ph="INSERT INTO `gold_widgets`... " />
-            <marker date="1480164456664" expanded="true" signature="17963:18431" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="18624:18929" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="19150:19672" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="19875:21254" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="true" signature="21323:37107" ph="INSERT INTO `gold_posts`... " />
-            <marker date="1480164456664" expanded="true" signature="37216:37473" ph="CREATE TABLE... IF" />
-            <marker date="1480164456664" expanded="false" signature="41128:41136" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="41353:41361" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="41589:41603" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="41716:41724" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="42131:42139" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="42251:42257" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="42871:42879" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="43951:43959" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="44923:44933" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="45219:45227" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="46000:46008" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="46355:46365" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="47535:47543" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="47834:47844" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="47994:48008" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="51674:51682" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="51899:51907" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="52135:52149" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="52262:52270" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="52677:52685" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="52797:52803" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="53417:53425" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="54497:54505" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="55469:55479" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="55758:55766" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="56545:56553" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="56859:56869" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="58059:58067" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="58358:58368" ph="..." />
-            <marker date="1480164456664" expanded="false" signature="58518:58532" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,33 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-663">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480115937084" expanded="true" signature="328:3663" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="337:663" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="682:3653" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="710:926" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="745:918" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="952:3643" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="985:3633" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="1025:3621" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="1235:3605" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="1331:1535" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="1576:1772" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="1813:2009" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="2050:2270" ph="..." />
-            <marker date="1480115937084" expanded="false" signature="2289:2306" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="2384:2584" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="2625:2813" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="2854:3062" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="3103:3361" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="3132:3349" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="3147:3336" ph="..." />
-            <marker date="1480115937084" expanded="false" signature="3220:3232" ph="..." />
-            <marker date="1480115937084" expanded="false" signature="3248:3296" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="3402:3593" ph="..." />
-            <marker date="1480115937084" expanded="false" signature="3422:3450" ph="..." />
-            <marker date="1480115937084" expanded="true" signature="3451:3581" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,9 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <marker date="1480115937262" expanded="true" signature="1479:1499" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1186,37 +1029,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/default/installer.css">
+    <entry file="file://$PROJECT_DIR$/gold-skins/default/gold-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="3792" column="1" selection-start-line="3792" selection-start-column="1" selection-end-line="3792" selection-end-column="1" />
+        <state relative-caret-position="14365">
+          <caret line="845" column="46" selection-start-line="845" selection-start-column="46" selection-end-line="845" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gold-app/gold-lang/fr.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="901">
           <caret line="57" column="13" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gold-skins/default/gold-styles.css">
+    <entry file="file://$PROJECT_DIR$/gold-skins/default/installer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="845" column="46" selection-start-line="845" selection-start-column="46" selection-end-line="845" selection-end-column="46" />
+        <state relative-caret-position="17">
+          <caret line="3792" column="1" selection-start-line="3792" selection-start-column="1" selection-end-line="3792" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gold-skins/default/gold-skin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="17">
           <caret line="968" column="45" selection-start-line="968" selection-start-column="45" selection-end-line="968" selection-end-column="45" />
           <folding>
             <marker date="1480166608129" expanded="true" signature="2751:2799" ph="SELECT * FRO... gold_posts" />
